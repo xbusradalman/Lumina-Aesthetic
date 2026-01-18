@@ -1,0 +1,170 @@
+{
+  "common": {
+    "officeTime": "Heures de bureau : Lun - Ven 8h00 - 18h30",
+    "address": "123 Serenity Lane, Blissfield, CA 90210",
+    "homepage": "Accueil",
+    "aboutUs": "À propos de nous",
+    "services": "Services",
+    "ourServices": "Nos services",
+    "serviceDetail": "Détail du service",
+    "appointment": "Rendez-vous",
+    "pages": "Pages",
+    "pricing": "Tarification",
+    "team": "Équipe",
+    "blogs": "Blogs",
+    "blogDetail": "Détail du blog",
+    "faqs": "FAQ",
+    "error404": "Erreur 404",
+    "contactUs": "Contactez-nous",
+    "getQuotes": "Obtenir un devis",
+    "callUsAnytime": "Appelez-nous à tout moment",
+    "phone": "+90 537 2784482",
+    "contact": "Contact",
+    "quickLinks": "Liens rapides",
+    "newsletter": "Newsletter",
+    "getLatestNews": "Recevez les dernières nouvelles et conseils.",
+    "subscribeNow": "S'abonner maintenant",
+    "yourEmailHere": "Votre e-mail ici",
+    "copyright": "Copyright © 2025 Lumina Aesthetic & Health. Tous droits réservés.",
+    "readMore": "Lire la suite",
+    "allBlogArticle": "Tous les blogs et articles"
+  },
+  "home": {
+    "heroTagline": "TROUVEZ L'ÉQUILIBRE, EMBRASSEZ LA VIE",
+    "heroTitle": "Prendre soin de votre <span class=\"text-primary-color\">Paix intérieure</span>",
+    "heroInner": "Paix intérieure",
+    "heroDescription": "Découvrez la clarté, la confiance et le bien-être émotionnel grâce à un accompagnement guidé qui vous aide à gérer le stress, à guérir de l'intérieur et à grandir plus fort dans tous les aspects de votre parcours de santé mentale.",
+    "startCheckup": "Commencer un contrôle maintenant",
+    "reviewOnGoogle": "Avis sur Google",
+    "features": {
+      "personalizedWellness": {
+        "title": "Plans de bien-être\npersonnalisés",
+        "description": "Guidance sur mesure conçue pour répondre efficacement à vos besoins et objectifs uniques."
+      },
+      "expertCounseling": {
+        "title": "Séances de conseil\ndirigées par des experts",
+        "description": "Soutien professionnel conçu pour guider le bien-être émotionnel chaque jour."
+      },
+      "supportCommunity": {
+        "title": "Communauté de soutien\n24/7",
+        "description": "Espace toujours connecté offrant soins, encouragement et croissance partagée."
+      },
+      "selfCareTools": {
+        "title": "Outils d'auto-soins\ninteractifs",
+        "description": "Ressources numériques habilitantes pour développer des habitudes saines de manière indépendante."
+      }
+    },
+    "about": {
+      "tagline": "À PROPOS DE NOUS",
+      "title": "Votre voyage vers le bien-être mental commence ici",
+      "description": "Chaque petit pas vers une meilleure santé mentale est une réalisation significative dans nos vies. Avec le bon soutien, chaque individu peut trouver la force de faire face aux défis, de gérer le stress et de construire des habitudes positives. Nous croyons que tout le monde mérite l'opportunité de grandir, de prospérer et d'expérimenter la paix intérieure. Grâce à une approche empathique et professionnelle, nous sommes là pour vous aider à découvrir les meilleures solutions pour un bien-être mental et émotionnel durable.",
+      "freeConsultation": "Consultation gratuite",
+      "emergencyService": "Service d'urgence",
+      "mentalSatisfaction": "Satisfaction mentale",
+      "psychologistsServices": "Services de psychologues",
+      "quote": "Guérir ne signifie pas que les dégâts n'ont jamais existé ; cela signifie que la force de se relever est plus grande que la douleur",
+      "readMore": "Lire la suite"
+    },
+    "howWeWork": {
+      "tagline": "COMMENT NOUS TRAVAILLONS ?",
+      "title": "Ici pour votre {health},\n{here} pour votre cœur",
+      "health": "Santé",
+      "here": "Ici",
+      "description": "Nous offrons des soins compatissants, combinant un soutien physique et émotionnel pour vous aider à prospérer dans tous les aspects.",
+      "getConsultNow": "Obtenir une consultation maintenant",
+      "step1": {
+        "number": "01",
+        "title": "Écouter et comprendre",
+        "description": "Votre parcours de bien-être compte. Nous nous engageons à soutenir à la fois votre clarté mentale et votre force émotionnelle à chaque étape."
+      },
+      "step2": {
+        "number": "02",
+        "title": "Créer un plan sur mesure",
+        "description": "Du stress quotidien aux moments les plus difficiles de la vie, notre équipe est prête à soutenir votre guérison et votre bien-être global."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Soutenir et autonomiser",
+        "description": "Vous permettre de bien vivre avec des soins qui nourrissent votre corps, votre esprit et votre paix émotionnelle chaque jour."
+      }
+    },
+    "services": {
+      "tagline": "NOS SERVICES",
+      "title": "Briser les stigmates, construire la force",
+      "individualTherapy": {
+        "title": "Thérapie individuelle",
+        "description": "Guidance sur mesure conçue pour répondre efficacement à vos besoins et objectifs uniques."
+      },
+      "groupCounseling": {
+        "title": "Conseil de groupe",
+        "description": "Soutien professionnel conçu pour guider le bien-être émotionnel chaque jour."
+      },
+      "stressManagement": {
+        "title": "Gestion du stress",
+        "description": "Ressources numériques habilitantes pour développer des habitudes saines de manière indépendante."
+      }
+    },
+    "appointment": {
+      "whyChooseUs": "Pourquoi nous choisir ?",
+      "title": "Restaurer <span class=\"text-primary-color\">l'espoir</span>, un<br>jour <span class=\"text-primary-color\">à la fois</span>",
+      "hope": "l'espoir",
+      "atATime": "à la fois",
+      "description": "Grâce à des soins constants et des conseils compatissants, nous aidons les individus à redécouvrir leur force, à développer leur résilience et à avancer vers un avenir plus brillant et plus sain à leur propre rythme.",
+      "compassionateProfessionals": "Professionnels compatissants et expérimentés",
+      "holisticApproach": "Approche holistique du bien-être",
+      "safeEnvironment": "Environnement sûr et favorable",
+      "makeAppointment": "Prendre rendez-vous",
+      "satisfaction": "Satisfaction",
+      "happyPatient": "Patient heureux",
+      "expertTherapist": "Thérapeute expert"
+    },
+    "feedback": {
+      "tagline": "AVIS CLIENTS",
+      "title": "La guérison commence par une conversation",
+      "description": "La guérison n'est pas précipitée—elle est soutenue. Notre équipe marche à vos côtés, offrant compréhension et soutien sur mesure pour vous aider à reconstruire la confiance et la paix émotionnelle jour après jour."
+    },
+    "team": {
+      "tagline": "NOS SPÉCIALISTES",
+      "title": "Rencontrez nos\nthérapeutes seniors"
+    },
+    "quotes": {
+      "tagline": "OBTENIR UN DEVIS",
+      "title": "Faites {theFirstStep} vers un esprit {healthier}. Rejoignez-nous aujourd'hui et commencez votre voyage vers le {wellbeing}!",
+      "theFirstStep": "le premier pas",
+      "healthier": "plus sain",
+      "wellbeing": "bien-être",
+      "needHelp": "Besoin d'aide ? Contactez-nous",
+      "description": "Chaque petit pas compte. Nous nous engageons à marcher avec vous à travers les moments difficiles, à encourager les progrès et à nourrir votre voyage vers un rétablissement mental et émotionnel durable.",
+      "emailUs": "Envoyez-nous un e-mail",
+      "ourLocation": "Notre emplacement",
+      "form": {
+        "name": "Nom",
+        "yourNameHere": "Votre nom ici",
+        "email": "E-mail",
+        "yourEmailHere": "Votre e-mail ici",
+        "phone": "Téléphone",
+        "yourPhoneNumber": "Votre numéro de téléphone",
+        "date": "Date",
+        "time": "Heure",
+        "subject": "Sujet",
+        "yourSubject": "Votre sujet.",
+        "message": "Message",
+        "tellUsYourStory": "Racontez-nous votre histoire",
+        "makeAppointment": "Prendre rendez-vous",
+        "validNameRequired": "Un nom valide est requis.",
+        "validEmailRequired": "Un e-mail valide est requis.",
+        "validPhoneRequired": "Un téléphone valide est requis.",
+        "validDateRequired": "Une date valide est requise.",
+        "whatTimeRequired": "L'heure est requise.",
+        "validSubjectRequired": "Un sujet valide est requis."
+      },
+      "successMessage": "Votre message a été envoyé avec succès.",
+      "errorMessage": "Quelque chose ne va pas ! L'envoi du formulaire a échoué.",
+      "subscribeSuccess": "Votre abonnement a été envoyé avec succès."
+    },
+    "news": {
+      "tagline": "NEWSLETTER",
+      "title": "Lisez notre dernier blog et article"
+    }
+  }
+}

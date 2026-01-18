@@ -1,0 +1,170 @@
+{
+  "common": {
+    "officeTime": "Office Time : Mon - Fri 8:00 - 6:30",
+    "address": "123 Serenity Lane, Blissfield, CA 90210",
+    "homepage": "Homepage",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "ourServices": "Our Services",
+    "serviceDetail": "Service Detail",
+    "appointment": "Appointment",
+    "pages": "Pages",
+    "pricing": "Pricing",
+    "team": "Team",
+    "blogs": "Blogs",
+    "blogDetail": "Blog Detail",
+    "faqs": "FAQs",
+    "error404": "Error 404",
+    "contactUs": "Contact Us",
+    "getQuotes": "Get Quotes",
+    "callUsAnytime": "Call us anytime",
+    "phone": "+90 537 2784482",
+    "contact": "Contact",
+    "quickLinks": "Quick Links",
+    "newsletter": "Newsletter",
+    "getLatestNews": "Get the latest news other tips.",
+    "subscribeNow": "Subscribe now",
+    "yourEmailHere": "Your email here",
+    "copyright": "Copyright © 2025 Lumina Aesthetic & Health. All Rights Reserved.",
+    "readMore": "Read More",
+    "allBlogArticle": "All Blog & Article"
+  },
+  "home": {
+    "heroTagline": "FIND BALANCE, EMBRACE LIFE",
+    "heroTitle": "Caring for Your <span class=\"text-primary-color\">Inner</span> Peace",
+    "heroInner": "Inner",
+    "heroDescription": "Discover clarity, confidence, and emotional wellness through guided support that helps you manage stress, heal from within, and grow stronger in every aspect of your mental health journey.",
+    "startCheckup": "Start A Checkup Now",
+    "reviewOnGoogle": "Review on Google",
+    "features": {
+      "personalizedWellness": {
+        "title": "Personalized\nWellness Plans",
+        "description": "Tailored guidance crafted to meet your unique needs and goals effectively."
+      },
+      "expertCounseling": {
+        "title": "Expert-Led\nCounseling Sessions",
+        "description": "Professional support designed to guide emotional well-being every single day."
+      },
+      "supportCommunity": {
+        "title": "24/7 Support\nCommunity",
+        "description": "Always-connected space offering care, encouragement, and shared growth."
+      },
+      "selfCareTools": {
+        "title": "Interactive\nSelf-Care Tools",
+        "description": "Empowering digital resources to build healthy habits independently."
+      }
+    },
+    "about": {
+      "tagline": "ABOUT US",
+      "title": "Your Journey To Mental Wellness Starts Here",
+      "description": "Every small step toward better mental health is a significant achievement in our lives. With the right support, each individual can find the strength to face challenges, manage stress, and build positive habits. We believe that everyone deserves the opportunity to grow, thrive, and experience inner peace. Through an empathetic and professional approach, we are here to help you discover the best solutions for lasting mental and emotional well-being.",
+      "freeConsultation": "Free Consultation",
+      "emergencyService": "Emergency Service",
+      "mentalSatisfaction": "Mental Satisfaction",
+      "psychologistsServices": "Psychologists Services",
+      "quote": "Healing doesn't mean the damage never existed; it means the strength to rise is greater than the pain",
+      "readMore": "Read More"
+    },
+    "howWeWork": {
+      "tagline": "HOW WE WORK ?",
+      "title": "Here For Your <span class=\"text-primary-color\">Health</span>,<br><span class=\"text-primary-color\">Here</span> For Your Heart",
+      "health": "Health",
+      "here": "Here",
+      "description": "We offer compassionate care, combining physical and emotional support to help you thrive in every aspect.",
+      "getConsultNow": "Get Consult Now",
+      "step1": {
+        "number": "01",
+        "title": "Listen & Understand",
+        "description": "Your wellness journey matters. We're dedicated to supporting both your mental clarity and emotional strength every step forward."
+      },
+      "step2": {
+        "number": "02",
+        "title": "Create A Tailored Plan",
+        "description": "From everyday stress to life's hardest moments, our team stands ready to support your healing and overall well-being."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Support & Empower",
+        "description": "Empowering you to live well with care that nurtures your body, mind, and emotional peace every single day."
+      }
+    },
+    "services": {
+      "tagline": "OUR SERVICES",
+      "title": "Breaking Stigmas, Building Strength",
+      "individualTherapy": {
+        "title": "Individual Therapy",
+        "description": "Tailored guidance crafted to meet your unique needs and goals effectively."
+      },
+      "groupCounseling": {
+        "title": "Group Counseling",
+        "description": "Professional support designed to guide emotional well-being every single day."
+      },
+      "stressManagement": {
+        "title": "Stress Management",
+        "description": "Empowering digital resources to build healthy habits independently."
+      }
+    },
+    "appointment": {
+      "whyChooseUs": "Why Choose Us ?",
+      "title": "Restoring <span class=\"text-primary-color\">Hope</span>, One<br>Day <span class=\"text-primary-color\">At A Time</span>",
+      "hope": "Hope",
+      "atATime": "At A Time",
+      "description": "Through consistent care and compassionate guidance, we help individuals rediscover strength, build resilience, and move forward toward a brighter, healthier future at their own pace.",
+      "compassionateProfessionals": "Compassionate & Experienced Professionals",
+      "holisticApproach": "Holistic Approach To Well-Being",
+      "safeEnvironment": "Safe & Supportive Environment",
+      "makeAppointment": "Make An Appointment",
+      "satisfaction": "Satisfaction",
+      "happyPatient": "Happy Patient",
+      "expertTherapist": "Expert Therapist"
+    },
+    "feedback": {
+      "tagline": "CLIENT FEEDBACKS",
+      "title": "Healing Begins with a Conversation",
+      "description": "Healing isn't rushed—it's supported. Our team walks beside you, offering understanding and tailored support to help you rebuild confidence and emotional peace day by day."
+    },
+    "team": {
+      "tagline": "OUR SPECIALIST",
+      "title": "Meet Our Senior\nTherapist"
+    },
+    "quotes": {
+      "tagline": "GET A QUOTE",
+      "title": "Take <span class=\"text-primary-color\">The first step</span> toward a <span class=\"text-primary-color\">healthier</span> mind. Join us today and start your journey to <span class=\"text-primary-color\">well-being!</span>",
+      "theFirstStep": "The first step",
+      "healthier": "healthier",
+      "wellbeing": "well-being!",
+      "needHelp": "Need Any Help ? Get In Touch With Us",
+      "description": "Every small step counts. We're committed to walking with you through difficult moments, encouraging progress, and nurturing your journey toward lasting mental and emotional recovery.",
+      "emailUs": "Email us",
+      "ourLocation": "Our location",
+      "form": {
+        "name": "Name",
+        "yourNameHere": "Your name here",
+        "email": "Email",
+        "yourEmailHere": "your email here",
+        "phone": "Phone",
+        "yourPhoneNumber": "Your phone number",
+        "date": "Date",
+        "time": "Time",
+        "subject": "Subject",
+        "yourSubject": "Your subject.",
+        "message": "Message",
+        "tellUsYourStory": "Tell us your story",
+        "makeAppointment": "Make An Appoinment",
+        "validNameRequired": "Valid name is required.",
+        "validEmailRequired": "Valid email is required.",
+        "validPhoneRequired": "Valid phone is required.",
+        "validDateRequired": "Valid date is required.",
+        "whatTimeRequired": "What time is required.",
+        "validSubjectRequired": "Valid subject is required."
+      },
+      "successMessage": "Your Message Successfully Send.",
+      "errorMessage": "Something Wrong ! Send Form Failed.",
+      "subscribeSuccess": "Your Subscribe Send Successfully."
+    },
+    "news": {
+      "tagline": "NEWSLETTER",
+      "title": "Read Our Latest Blog & Article"
+    }
+  }
+}

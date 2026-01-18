@@ -1,0 +1,170 @@
+{
+  "common": {
+    "officeTime": "Ofis Saati : Pazartesi - Cuma 08:00 - 18:30",
+    "address": "123 Serenity Lane, Blissfield, CA 90210",
+    "homepage": "Ana Sayfa",
+    "aboutUs": "Hakkımızda",
+    "services": "Hizmetler",
+    "ourServices": "Hizmetlerimiz",
+    "serviceDetail": "Hizmet Detayı",
+    "appointment": "Randevu",
+    "pages": "Sayfalar",
+    "pricing": "Fiyatlandırma",
+    "team": "Ekip",
+    "blogs": "Bloglar",
+    "blogDetail": "Blog Detayı",
+    "faqs": "SSS",
+    "error404": "Hata 404",
+    "contactUs": "İletişim",
+    "getQuotes": "Teklif Al",
+    "callUsAnytime": "Bizi istediğiniz zaman arayın",
+    "phone": "+90 537 2784482",
+    "contact": "İletişim",
+    "quickLinks": "Hızlı Bağlantılar",
+    "newsletter": "Bülten",
+    "getLatestNews": "En son haberler ve ipuçlarını alın.",
+    "subscribeNow": "Şimdi abone ol",
+    "yourEmailHere": "E-posta adresiniz",
+    "copyright": "Telif Hakkı © 2025 Lumina Aesthetic & Health. Tüm Hakları Saklıdır.",
+    "readMore": "Devamını Oku",
+    "allBlogArticle": "Tüm Blog & Makale"
+  },
+  "home": {
+    "heroTagline": "DENGEYİ BULUN, HAYATI KUCakLAYIN",
+    "heroTitle": "İç <span class=\"text-primary-color\">İç</span> Huzurunuz İçin Bakım",
+    "heroInner": "İç",
+    "heroDescription": "Stresi yönetmenize, içten iyileşmenize ve zihinsel sağlık yolculuğunuzun her yönünde daha güçlü büyümenize yardımcı olan rehberli destek aracılığıyla netlik, güven ve duygusal sağlık keşfedin.",
+    "startCheckup": "Şimdi Kontrol Başlat",
+    "reviewOnGoogle": "Google'da Değerlendirme",
+    "features": {
+      "personalizedWellness": {
+        "title": "Kişiselleştirilmiş\nSağlık Planları",
+        "description": "Benzersiz ihtiyaçlarınızı ve hedeflerinizi etkili bir şekilde karşılamak için hazırlanmış özel rehberlik."
+      },
+      "expertCounseling": {
+        "title": "Uzman Yönetiminde\nDanışmanlık Seansları",
+        "description": "Her gün duygusal refahı yönlendirmek için tasarlanmış profesyonel destek."
+      },
+      "supportCommunity": {
+        "title": "7/24 Destek\nTopluluğu",
+        "description": "Bakım, teşvik ve paylaşılan büyüme sunan her zaman bağlı alan."
+      },
+      "selfCareTools": {
+        "title": "İnteraktif\nÖz Bakım Araçları",
+        "description": "Sağlıklı alışkanlıklar bağımsız olarak oluşturmak için güçlendirici dijital kaynaklar."
+      }
+    },
+    "about": {
+      "tagline": "HAKKIMIZDA",
+      "title": "Zihinsel Sağlık Yolculuğunuz Burada Başlıyor",
+      "description": "Daha iyi zihinsel sağlığa doğru atılan her küçük adım, hayatımızdaki önemli bir başarıdır. Doğru destekle, her birey zorluklarla yüzleşme, stresi yönetme ve olumlu alışkanlıklar oluşturma gücünü bulabilir. Herkesin büyüme, gelişme ve iç huzur yaşama fırsatını hak ettiğine inanıyoruz. Empatik ve profesyonel bir yaklaşımla, kalıcı zihinsel ve duygusal refah için en iyi çözümleri keşfetmenize yardımcı olmak için buradayız.",
+      "freeConsultation": "Ücretsiz Danışmanlık",
+      "emergencyService": "Acil Servis",
+      "mentalSatisfaction": "Zihinsel Memnuniyet",
+      "psychologistsServices": "Psikolog Hizmetleri",
+      "quote": "İyileşme, hasarın hiç var olmadığı anlamına gelmez; yükselme gücünün acıdan daha büyük olduğu anlamına gelir",
+      "readMore": "Devamını Oku"
+    },
+    "howWeWork": {
+      "tagline": "NASIL ÇALIŞIYORUZ ?",
+      "title": "Sağlığınız İçin {health},\n{here} Kalbiniz İçin",
+      "health": "Burada",
+      "here": "Burada",
+      "description": "Her yönden gelişmenize yardımcı olmak için fiziksel ve duygusal desteği birleştiren şefkatli bakım sunuyoruz.",
+      "getConsultNow": "Şimdi Danışın",
+      "step1": {
+        "number": "01",
+        "title": "Dinle & Anla",
+        "description": "Sağlık yolculuğunuz önemlidir. Her adımda hem zihinsel netliğinizi hem de duygusal gücünüzü desteklemeye adadık."
+      },
+      "step2": {
+        "number": "02",
+        "title": "Özel Bir Plan Oluştur",
+        "description": "Günlük stresten hayatın en zor anlarına kadar, ekibimiz iyileşmenizi ve genel refahınızı desteklemeye hazır."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Destekle & Güçlendir",
+        "description": "Her gün bedeninizi, zihninizi ve duygusal huzurunuzu besleyen bakımla iyi yaşamanızı sağlıyoruz."
+      }
+    },
+    "services": {
+      "tagline": "HİZMETLERİMİZ",
+      "title": "Damgaları Kırmak, Güç Oluşturmak",
+      "individualTherapy": {
+        "title": "Bireysel Terapi",
+        "description": "Benzersiz ihtiyaçlarınızı ve hedeflerinizi etkili bir şekilde karşılamak için hazırlanmış özel rehberlik."
+      },
+      "groupCounseling": {
+        "title": "Grup Danışmanlığı",
+        "description": "Her gün duygusal refahı yönlendirmek için tasarlanmış profesyonel destek."
+      },
+      "stressManagement": {
+        "title": "Stres Yönetimi",
+        "description": "Sağlıklı alışkanlıklar bağımsız olarak oluşturmak için güçlendirici dijital kaynaklar."
+      }
+    },
+    "appointment": {
+      "whyChooseUs": "Neden Bizi Seçmelisiniz ?",
+      "title": "Umudu <span class=\"text-primary-color\">Geri Getirmek</span>, Bir<br>Gün <span class=\"text-primary-color\">Bir Zaman</span>",
+      "hope": "Umut",
+      "atATime": "Bir Zaman",
+      "description": "Tutarlı bakım ve şefkatli rehberlik aracılığıyla, bireylerin gücü yeniden keşfetmesine, direnç oluşturmasına ve kendi hızlarında daha parlak, daha sağlıklı bir geleceğe doğru ilerlemesine yardımcı oluyoruz.",
+      "compassionateProfessionals": "Şefkatli & Deneyimli Profesyoneller",
+      "holisticApproach": "Refaha Bütünsel Yaklaşım",
+      "safeEnvironment": "Güvenli & Destekleyici Ortam",
+      "makeAppointment": "Randevu Al",
+      "satisfaction": "Memnuniyet",
+      "happyPatient": "Mutlu Hasta",
+      "expertTherapist": "Uzman Terapist"
+    },
+    "feedback": {
+      "tagline": "MÜŞTERİ GERİ BİLDİRİMLERİ",
+      "title": "İyileşme Bir Konuşmayla Başlar",
+      "description": "İyileşme aceleye getirilmez—desteklenir. Ekibimiz yanınızda yürüyor, güveni yeniden inşa etmenize ve duygusal huzuru gün be gün sağlamanıza yardımcı olmak için anlayış ve özel destek sunuyor."
+    },
+    "team": {
+      "tagline": "UZMANLARIMIZ",
+      "title": "Kıdemli Terapistlerimizle\nTanışın"
+    },
+    "quotes": {
+      "tagline": "TEKLİF AL",
+      "title": "Daha {theFirstStep} sağlıklı bir zihin için {healthier} adım atın. Bugün bize katılın ve {wellbeing} yolculuğunuza başlayın!",
+      "theFirstStep": "ilk",
+      "healthier": "daha sağlıklı",
+      "wellbeing": "refah",
+      "needHelp": "Yardıma mı İhtiyacınız Var? Bizimle İletişime Geçin",
+      "description": "Her küçük adım önemlidir. Zor anlarda yanınızda yürümeye, ilerlemeyi teşvik etmeye ve kalıcı zihinsel ve duygusal iyileşmeye doğru yolculuğunuzu beslemeye kararlıyız.",
+      "emailUs": "Bize e-posta gönderin",
+      "ourLocation": "Konumumuz",
+      "form": {
+        "name": "Ad",
+        "yourNameHere": "Adınız",
+        "email": "E-posta",
+        "yourEmailHere": "E-posta adresiniz",
+        "phone": "Telefon",
+        "yourPhoneNumber": "Telefon numaranız",
+        "date": "Tarih",
+        "time": "Saat",
+        "subject": "Konu",
+        "yourSubject": "Konunuz.",
+        "message": "Mesaj",
+        "tellUsYourStory": "Hikayenizi anlatın",
+        "makeAppointment": "Randevu Al",
+        "validNameRequired": "Geçerli bir ad gereklidir.",
+        "validEmailRequired": "Geçerli bir e-posta gereklidir.",
+        "validPhoneRequired": "Geçerli bir telefon gereklidir.",
+        "validDateRequired": "Geçerli bir tarih gereklidir.",
+        "whatTimeRequired": "Saat gereklidir.",
+        "validSubjectRequired": "Geçerli bir konu gereklidir."
+      },
+      "successMessage": "Mesajınız Başarıyla Gönderildi.",
+      "errorMessage": "Bir Şeyler Yanlış Gitti! Form Gönderimi Başarısız.",
+      "subscribeSuccess": "Aboneliğiniz Başarıyla Gönderildi."
+    },
+    "news": {
+      "tagline": "BÜLTEN",
+      "title": "Son Blog & Makalelerimizi Okuyun"
+    }
+  }
+}

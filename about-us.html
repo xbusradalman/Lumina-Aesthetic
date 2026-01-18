@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>About Us - Nuro</title>
+  <!-- Animation On Scroll (AOS) -->
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-white">
+    <div class="b-container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light" aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+          <div class="logo-box">
+            <a href="index.html" class="navbar-brand">
+              <img src="image/Main-Logo.webp" alt="Main Logo"></a>
+          </div>
+          <!-- Language Selector -->
+          <div class="language-selector dropdown me-3" id="languageSelectorContainer">
+            <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" 
+                    id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-globe me-1"></i>
+              <span class="current-lang">English</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item active" href="#" data-lang="en">English</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="tr">Türkçe</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="fr">Français</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="de">Deutsch</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="ar">العربية</a></li>
+            </ul>
+          </div>
+          <button class="navbar-toggler bg-primary-color border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="bi bi-list text-white fs-2"></span>
+          </button>
+          <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header" id="offcanvasNavbarLabel">
+              <div class="logo-drawer">
+                <a href="index.html" class="navbar-brand"><img src="image/Main-Logo.webp" alt="Drawer Logo"
+                    class="img-fluid"></a>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-4 justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html" data-i18n="common.homepage">Homepage</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="about-us.html" data-i18n="common.aboutUs">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="appointment.html" data-i18n="common.appointment">Appointment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html" data-i18n="common.contactUs">Contact Us</a>
+                </li>
+              </ul>
+              <div class="mt-lg-3">
+                <a href="contact-us.html" class="btn btn-quotes">
+                  <i class="bi bi-journal-bookmark-fill pe-2"></i>
+                  <span data-i18n="common.getQuotes">Get Quotes</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- #navbar end -->
+    </div>
+  </header>
+  <!-- #header end -->
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- About Section -->
+    <section class="section about-section pb-5 my-5">
+      <div class="b-container">
+        <div class="row align-items-center g-5">
+          <!-- Left Image Side -->
+          <div class="col-xl-4 d-flex position-relative">
+            <div class="position-relative mx-auto img-container">
+              <!-- Primary Image -->
+              <div class="ratio-wrapper-429">
+                <img src="image/support-diversity-and-women-smile-for-skincare-b-2026-01-09-10-05-53-utc (1).jpg" alt="About Us"
+                  class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 rounded-5" data-aos="fade-right"
+                  data-aos-easing="ease-in-sine" data-aos-delay="500" data-aos-duration="1000">
+              </div>
+            </div>
+          </div>
+          <!-- Center Text Side -->
+          <div class="col-xl-8">
+            <div class="row">
+              <h6 class="text-primary-color fw-semibold mb-2" data-i18n="home.about.aboutPage.tagline">ABOUT US</h6>
+              <h2 class="font-1 mb-4" style="font-weight: 800;" data-i18n="home.about.aboutPage.title">Because Your Health Deserves Excellence</h2>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-7">
+                <p class="mb-3" style="font-size: large;" data-i18n="home.about.aboutPage.description1">At Lumina Aesthetic & Health, we believe that true transformation begins with trust. Your journey is not just about a procedure—it is about feeling safe, informed, and supported every step of the way. We connect you with world-class clinics and expert physicians, managing every detail with precision and care.</p>
+                <p class="mb-4" style="font-size: large;" data-i18n="home.about.aboutPage.description2">Well-being is more than treatment; it is the confidence to move forward knowing you are in the right hands. With transparent guidance, professional coordination, and a patient-centered approach, we turn complex medical journeys into clear and comfortable experiences.</p>
+                <ul class="list-unstyled fs-5">
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="bi bi-chevron-right text-primary-color me-2"></i>
+                    <span data-i18n="home.about.aboutPage.point1">Your health defines your future.</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="bi bi-chevron-right text-primary-color me-2"></i>
+                    <span data-i18n="home.about.aboutPage.point2">Your comfort defines your experience.</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="bi bi-chevron-right text-primary-color me-2"></i>
+                    <span data-i18n="home.about.aboutPage.point3">Your transformation begins with the right partner.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-5 mt-sm-4" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                data-aos-delay="500" data-aos-duration="1000">
+                <div class="card bg-gradient-primary p-4 rounded-5 border-0">
+                  <div class="card-body text-white">
+                    <h4 class="font-1" style="font-weight: 900;" data-i18n="home.about.aboutPage.cardTitle">Together, We Make It Possible</h4>
+                    <div class="row mt-4">
+                      <div class="mb-4 fs-5">
+                        <i class="bi bi-check-circle-fill text-secondary-color-2 me-2"></i>
+                        <span data-i18n="home.about.aboutPage.freeConsultation">Free Consultation</span>
+                      </div>
+                      <div class="mb-4 fs-5">
+                        <i class="bi bi-check-circle-fill text-secondary-color-2 me-2"></i>
+                        <span data-i18n="home.about.aboutPage.patientSatisfaction">Patient Satisfaction</span>
+                      </div>
+                      <div class="mb-4 fs-5">
+                        <i class="bi bi-check-circle-fill text-secondary-color-2 me-2"></i>
+                        <span data-i18n="home.about.aboutPage.emergencySupport">24/7 Emergency Support</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #about end -->
+
+    <!-- Consult Section -->
+    <section class="section py-5 text-white bg-gradient-secondary my-5">
+      <div class="b-container">
+        <div class="row justify-content-center text-center text-xl-start my-5">
+          <div class="col-12 col-xl-7">
+            <h6 class="text-primary-color fw-semibold mb-2" data-i18n="home.howWeWork.tagline">HOW WE WORK</h6>
+            <h2 class="font-1 mb-4" style="font-weight: 800;" data-i18n="home.howWeWork.title">
+              Here for Your Health,<br>Here for Your Transformation
+            </h2>
+          </div>
+          <div class="col-12 col-xl-5 mt-4 mt-md-0">
+            <p class="mb-4" style="font-size: large;" data-i18n="home.howWeWork.description">At Lumina Aesthetic & Health, we manage your medical journey with clarity, precision, and care. Our approach is built on trust, transparency, and full coordination—so you can focus on your transformation while we handle every detail.</p>
+            <a href="contact-us.html" class="btn btn-primary-solid" data-i18n="home.howWeWork.getConsultNow">Get Consult Now</a>
+          </div>
+        </div>
+
+        <hr class="border-white solid border-2 my-5">
+
+        <div class="row text-white mb-0 mb-xl-5 pt-5">
+          <div class="step-box col-12 col-lg-4" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500"
+            data-aos-duration="1000">
+            <h1 data-i18n="home.howWeWork.step1.number">01</h1>
+            <h3 data-i18n="home.howWeWork.step1.title">Listen & Assess</h3>
+            <p data-i18n="home.howWeWork.step1.description">Every journey begins with understanding. We carefully evaluate your needs, goals, and expectations to determine the most suitable treatment path.</p>
+          </div>
+          <div class="step-box col-12 col-lg-4" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500"
+            data-aos-duration="1000">
+            <h1 data-i18n="home.howWeWork.step2.number">02</h1>
+            <h3 data-i18n="home.howWeWork.step2.title">Create a Personalized Plan</h3>
+            <p data-i18n="home.howWeWork.step2.description">We match you with the right clinic and specialist, organizing your treatment, travel, accommodation, and schedule into one seamless plan.</p>
+          </div>
+          <div class="step-box col-12 col-lg-4" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="500"
+            data-aos-duration="1000">
+            <h1 data-i18n="home.howWeWork.step3.number">03</h1>
+            <h3 data-i18n="home.howWeWork.step3.title">Coordinate & Support</h3>
+            <p data-i18n="home.howWeWork.step3.description">From your first consultation to your return home, we remain by your side—managing every step and providing continuous support throughout the entire process.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #consult end -->
+
+
+
+    <!-- Feedback Section -->
+    <section class="section py-5 mt-5"
+      style="background: var(--accent-color-3);">
+      <div class="b-container">
+        <div class="row justify-content-between">
+          <div class="col-12 col-lg-7 text-center text-lg-start">
+            <h6 class="text-primary-color fw-semibold mb-2" data-i18n="home.feedback.tagline">CLIENT FEEDBACKS</h6>
+            <h2 class="font-1" style="font-weight: 800;" data-i18n="home.feedback.title">
+              Trust Begins with a Conversation
+            </h2>
+          </div>
+          <div class="col-12 col-lg-5 text-center text-lg-start mt-4 mt-md-0">
+            <p class="my-4 text-muted-color" style="font-size: large;" data-i18n="home.feedback.description">A health journey is not rushed—it is properly planned and managed with confidence. Our team is with you at every step from the first contact to your return to your country; eliminating uncertainty and making the process clear, safe, and comfortable for you.</p>
+          </div>
+        </div>
+
+        <div class="swiper mySwiper mt-4">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide">
+              <div class="card feedback-card">
+                <div class="d-flex align-content-center mb-3">
+                  <div class="mb-2 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fw-bold" data-i18n="home.feedback.client1.quote">"From the very first moment, I felt I was working with a professional and caring team. The clinic selection, appointments, and all organization were flawless. They made me feel safe."</p>
+                <div class="d-flex align-items-center mt-2">
+                  <img src="image/Place-Holder-265x265.webp" alt="Client 1" class="rounded-circle me-3"
+                    style="width: 64px; height: 64px;">
+                  <div class="mt-4">
+                    <h5 class="font-1 fw-bold text-primary-color" data-i18n="home.feedback.client1.name">Anna K.</h5>
+                    <p class="text-muted-color" data-i18n="home.feedback.client1.location">Germany</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="swiper-slide">
+              <div class="card feedback-card">
+                <div class="d-flex align-content-center mb-3">
+                  <div class="mb-2 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fw-bold" data-i18n="home.feedback.client2.quote">"Getting treatment abroad was intimidating at first. However, the Lumina team thought of every detail on my behalf. I was met at the airport, and I was not alone throughout the process."</p>
+                <div class="d-flex align-items-center mt-2">
+                  <img src="image/Place-Holder-265x265.webp" alt="Client 2" class="rounded-circle me-3"
+                    style="width: 64px; height: 64px;">
+                  <div class="mt-4">
+                    <h5 class="font-1 fw-bold text-primary-color" data-i18n="home.feedback.client2.name">Mark T.</h5>
+                    <p class="text-muted-color" data-i18n="home.feedback.client2.location">Netherlands</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="swiper-slide">
+              <div class="card feedback-card">
+                <div class="d-flex align-content-center mb-3">
+                  <div class="mb-2 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fw-bold" data-i18n="home.feedback.client3.quote">"They were very transparent about doctor selection and the treatment process. They clearly explained what would be done and what I should expect. This feeling of trust was everything to me."</p>
+                <div class="d-flex align-items-center mt-2">
+                  <img src="image/Place-Holder-265x265.webp" alt="Client 3" class="rounded-circle me-3"
+                    style="width: 64px; height: 64px;">
+                  <div class="mt-4">
+                    <h5 class="font-1 fw-bold text-primary-color" data-i18n="home.feedback.client3.name">Sophie M.</h5>
+                    <p class="text-muted-color" data-i18n="home.feedback.client3.location">Austria</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="swiper-slide">
+              <div class="card feedback-card">
+                <div class="d-flex align-content-center mb-3">
+                  <div class="mb-2 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fw-bold" data-i18n="home.feedback.client4.quote">"They stayed in communication with me even after the operation. They took care of my check-ups, my questions, everything. This was not just a service, it was a real companionship."</p>
+                <div class="d-flex align-items-center mt-2">
+                  <img src="image/Place-Holder-265x265.webp" alt="Client 4" class="rounded-circle me-3"
+                    style="width: 64px; height: 64px;">
+                  <div class="mt-4">
+                    <h5 class="font-1 fw-bold text-primary-color" data-i18n="home.feedback.client4.name">Daniel R.</h5>
+                    <p class="text-muted-color" data-i18n="home.feedback.client4.location">Switzerland</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #feedback end -->
+
+  </main>
+  <!-- #main end -->
+
+  <!-- Footer -->
+  <footer class="footer py-5 px-4">
+    <div class="footer-background"></div>
+    <div class="b-container">
+      <div class="row row-cols-1 pt-5 px-0">
+        <div class="footer-logo col-12 col-lg-3 mb-5 text-lg-start text-center">
+          <img src="image/footer.webp" alt="Footer Logo">
+          <div class="social-box d-flex justify-content-lg-start justify-content-center w-100">
+            <a href="https://www.facebook.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+                class="bi bi-facebook text-white"></i></a>
+            <a href="https://x.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+                class="bi bi-twitter-x text-white"></i></a>
+            <a href="https://www.linkedin.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+                class="bi bi-linkedin text-white"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+          <h4 class="text-secondary-color-2 mb-4">Contact</h4>
+          <p>Info@yourmail.com</p>
+          <p>+90 537 2784482</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+          <h4 class="text-secondary-color-2 mb-4">Quick Links</h4>
+          <ul class="d-flex flex-column p-0">
+            <li class="mb-2"><a href="index.html" class="links-secondary">Homepage</a></li>
+            <li class="mb-2"><a href="blogs.html" class="links-secondary">Blogs</a></li>
+            <li class="mb-2"><a href="faqs.html" class="links-secondary">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mb-3 text-md-start text-center">
+          <h4
+            class="font-1 fw-bolder text-secondary-color-2 mb-4 justify-content-md-start justify-content-center align-items-center mt-md-0 mt-sm-4">
+            Newsletter</h4>
+          <p class="fw-bolder">Get the latest news other tips.</p>
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast success_msg_subscribe text-bg-light" role="alert" aria-live="assertive"
+              aria-atomic="true">
+              <div class="d-flex">
+                <div class="toast-body">
+                  <i class="bi bi-check-circle-fill"></i> Your Subscribe Send Successfully.
+                </div>
+                <button type="button" class="btn me-2 m-auto" data-bs-dismiss="toast" aria-label="Close">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <form class="d-flex flex-column w-100 gap-2 needs-validation" novalidate>
+            <input type="text" name="action" value="subscribe" hidden>
+            <input type="email" name="email" id="email" class="form-control form-control-lg rounded-5"
+              placeholder="Your email here" required>
+            <div class="invalid-feedback text-white">
+              Please provide a valid email format (e.g.,
+              user@example.com).
+            </div>
+            <button type="submit" class="btn btn-block btn-secondary-solid submit_subscribe">Subscribe now</button>
+          </form>
+        </div>
+      </div>
+      <div class="row justify-content-center py-4 mt-4 border-top">
+        <p class="text-center w-100 mb-0">Copyright &copy; 2025 Lumina Aesthetic & Health. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer end -->
+
+  <!-- Scripts -->
+  <!-- jQuery -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <!-- Animation On Scroll (AOS) -->
+  <script src="js/vendor/aos.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/vendor/swiper-bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <!-- JS Script -->
+  <script src="js/submit-form.js"></script>
+  <script src="js/script-swiper.js"></script>
+  <script src="js/languages-data.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/script.js"></script>
+  <!-- #scripts end -->
+</body>
+
+</html>

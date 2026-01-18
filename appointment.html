@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title data-i18n="common.appointment">Appointment - Nuro</title>
+  <!-- Animation On Scroll (AOS) -->
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-white">
+    <div class="b-container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light" aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+          <div class="logo-box">
+            <a href="index.html" class="navbar-brand">
+              <img src="image/Main-Logo.webp" alt="Main Logo"></a>
+          </div>
+          <!-- Language Selector -->
+          <div class="language-selector dropdown me-3" id="languageSelectorContainer">
+            <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" 
+                    id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-globe me-1"></i>
+              <span class="current-lang">English</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item active" href="#" data-lang="en">English</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="tr">Türkçe</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="fr">Français</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="de">Deutsch</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="ar">العربية</a></li>
+            </ul>
+          </div>
+          <button class="navbar-toggler bg-primary-color border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="bi bi-list text-white fs-2"></span>
+          </button>
+          <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header" id="offcanvasNavbarLabel">
+              <div class="logo-drawer">
+                <a href="index.html" class="navbar-brand"><img src="image/Main-Logo.webp" alt="Drawer Logo"
+                    class="img-fluid"></a>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-4 justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html" data-i18n="common.homepage">Homepage</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html" data-i18n="common.aboutUs">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="appointment.html" data-i18n="common.appointment">Appointment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html" data-i18n="common.contactUs">Contact Us</a>
+                </li>
+              </ul>
+              <div class="mt-lg-3">
+                <a href="contact-us.html" class="btn btn-quotes">
+                  <i class="bi bi-journal-bookmark-fill pe-2"></i>
+                  <span data-i18n="common.getQuotes">Get Quotes</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- #navbar end -->
+    </div>
+  </header>
+  <!-- #header end -->
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Appointment Section -->
+    <section class="section py-5 mb-5">
+      <div class="b-container">
+        <div class="row align-items-center g-4 pt-5">
+          <!-- Left content -->
+          <div class="col-12 col-xl-5 order-1 order-md-3 order-xl-1 mt-5 text-center text-xl-start">
+            <p class="text-uppercase text-primary-color fs-5 fw-semibold mb-2" data-i18n="home.appointment.whyChooseUs">Why Choose Us ?</p>
+            <h2 class="font-1 display-5 mb-4" style="font-weight: 800;" data-i18n="home.appointment.title">
+              We Build Trust,<br>We Make Transformation Possible
+            </h2>
+            <p class="mb-4" style="font-size: large;" data-i18n="home.appointment.description">As Lumina Aesthetic & Health, we accept each of our clients' journeys as unique and valuable. With proper guidance, transparent communication, and professional organization; we eliminate uncertainty and make the process safe and controllable. Our goal is to take you not just to a treatment, but to a well-planned and seamless transformation process.</p>
+            <ul class="list-unstyled font-1 text-center text-xl-start">
+              <li class="d-flex flex-column flex-xl-row justify-content-center justify-content-xl-start mb-3">
+                <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
+                <div>
+                  <h5 class="fw-bolder py-1 mb-1" data-i18n="home.appointment.compassionateProfessionals">Expert and Reliable Network</h5>
+                  <p class="mb-0" style="font-size: 0.9rem;" data-i18n="home.appointment.compassionateProfessionalsDesc">We work with competent physicians in their fields and distinguished clinics, planning every step with medical seriousness.</p>
+                </div>
+              </li>
+              <li class="d-flex flex-column flex-xl-row justify-content-center justify-content-xl-start mb-3">
+                <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
+                <div>
+                  <h5 class="fw-bolder py-1 mb-1" data-i18n="home.appointment.holisticApproach">End-to-End Management</h5>
+                  <p class="mb-0" style="font-size: 0.9rem;" data-i18n="home.appointment.holisticApproachDesc">We organize the entire process on your behalf, from consultation to return day.</p>
+                </div>
+              </li>
+              <li class="d-flex flex-column flex-xl-row justify-content-center justify-content-xl-start mb-3">
+                <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
+                <div>
+                  <h5 class="fw-bolder py-1 mb-1" data-i18n="home.appointment.safeEnvironment">Transparent and Ethical Approach</h5>
+                  <p class="mb-0" style="font-size: 0.9rem;" data-i18n="home.appointment.safeEnvironmentDesc">We act with realistic information, clear processes, and the principle of confidentiality.</p>
+                </div>
+              </li>
+              <li class="d-flex flex-column flex-xl-row justify-content-center justify-content-xl-start mb-3">
+                <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
+                <div>
+                  <h5 class="fw-bolder py-1 mb-1" data-i18n="home.appointment.secureExperience">Safe and Comfortable Experience</h5>
+                  <p class="mb-0" style="font-size: 0.9rem;" data-i18n="home.appointment.secureExperienceDesc">We put your health at the center and ensure you feel safe at every stage.</p>
+                </div>
+              </li>
+            </ul>
+            <p class="mb-4 mt-3" style="font-size: large; font-style: italic;" data-i18n="home.appointment.closingStatement">On this journey you embark with us, you are not alone; a team that knows, manages, and takes responsibility for the process is with you.</p>
+          </div>
+
+          <!-- Middle content -->
+          <div class="col-12 col-md-7 col-xl-5 order-2 order-md-1">
+            <div class="ratio ratio-1x1">
+              <img src="image/doctor-touches-female-face-with-both-hands-in-pink-2026-01-05-06-10-54-utc.webp"
+                class="w-100 h-100 object-fit-cover position-absolute rounded-5" alt="Appointment" data-aos="fade-up"
+                data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+            </div>
+          </div>
+          <!-- Right content -->
+          <div class="col-12 col-md-5 col-xl-2 d-flex flex-column gap-3 order-3 order-md-2 order-xl-3">
+            <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left"
+              data-aos-easing="ease-out-cubic" data-aos-delay="250" data-aos-duration="1000">
+              <div class="card-body text-center text-white p-3 font-1">
+                <div class="display-5"><i class="bi bi-emoji-smile-fill accent-secondary-color"></i></div>
+                <span class="mb-0 fs-2 fw-bold">100%</span>
+                <p class="mb-0" data-i18n="home.appointment.satisfaction">Satisfaction</p>
+              </div>
+            </div>
+            <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left"
+              data-aos-easing="ease-out-cubic" data-aos-delay="500" data-aos-duration="1000">
+              <div class="card-body text-center text-white p-3 font-1">
+                <div class="display-5"><i class="bi bi-hand-thumbs-up-fill accent-secondary-color"></i></div>
+                <span class="mb-0 fs-2 fw-bold">257+</span>
+                <p class="mb-0" data-i18n="home.appointment.happyPatient">Happy Patient</p>
+              </div>
+            </div>
+            <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left"
+              data-aos-easing="ease-out-cubic" data-aos-delay="750" data-aos-duration="1000">
+              <div class="card-body text-center text-white p-3 font-1">
+                <div class="display-5"><i class="bi bi-person-plus-fill accent-secondary-color"></i></div>
+                <span class="mb-0 fs-2 fw-bold">Alanında</span>
+                <p class="mb-0">Uzman Hekimler</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #appointment end -->
+
+    <!-- Quotes Section -->
+    <section class="quotes-section py-5">
+      <div class="quotes-background"></div>
+      <div class="container py-5 px-2 px-md-0">
+        <div class="row justify-content-center text-center text-white">
+          <div class="col-12 col-xl-10">
+            <h6 class="text-primary-color fw-semibold mb-2" data-i18n="home.quotes.tagline">GET A QUOTE</h6>
+            <h2 class="font-1 text-white" style="font-weight: 800;" data-i18n="home.quotes.title">
+              Take the first step for your health and aesthetic journey. Contact us today, let's create your personalized plan together.
+            </h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-12 col-xl-10">
+            <div class="card rounded-5 shadow-lg border-0 bg-secondary-gradient">
+              <div class="card-body p-4 p-lg-5">
+                <div class="row g-5 align-items-strench">
+                  <div class="col-lg-6 col-md-12 order-lg-1 order-2">
+                    <div
+                      class="success_msg toast align-items-center w-100 shadow-none mb-3 border border-success rounded-pill my-4"
+                      role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="d-flex p-2">
+                        <div class="toast-body d-flex flex-row gap-3 align-items-center text-success">
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                          <span data-i18n="home.successMessage">Your Message Successfully Send.</span>
+                        </div>
+                        <button type="button" class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success"
+                          data-bs-dismiss="toast" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </div>
+                    <div
+                      class="error_msg toast align-items-center w-100 shadow-none border-danger mb-3 my-4 border rounded-pill"
+                      role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="d-flex p-2">
+                        <div class="toast-body d-flex flex-row gap-3 align-items-center text-danger">
+                          <i class="bi bi-exclamation-triangle-fill text-danger"></i>
+                          <span data-i18n="home.errorMessage">Something Wrong ! Send Form Failed.</span>
+                        </div>
+                        <button type="button" class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-danger"
+                          data-bs-dismiss="toast" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </div>
+                    <form class="needs-validation" data-aos="fade-up" data-aos-easing="ease-in-sine"
+                      data-aos-delay="250" data-aos-duration="1000" novalidate>
+                      <div class="row g-3">
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="name" class="form-label font-1 fs-4 fw-bold" data-i18n="home.quotes.form.name">Name</label>
+                          <input type="text" class="form-control form-control-lg rounded-5" id="name"
+                            data-i18n-placeholder="home.quotes.form.yourNameHere" placeholder="Your name here" name="name" required>
+                          <div class="invalid-feedback" data-i18n="home.quotes.form.validNameRequired">
+                            Valid name is required.
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="email" class="form-label font-1 fs-4 fw-bold" data-i18n="home.quotes.form.email">Email</label>
+                          <input type="email" class="form-control form-control-lg rounded-5" id="email"
+                            data-i18n-placeholder="home.quotes.form.yourEmailHere" placeholder="Your email here" name="email" required>
+                          <div class="invalid-feedback" data-i18n="home.quotes.form.validEmailRequired">
+                            Valid email is required.
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="phone" class="form-label font-1 fs-4 fw-bold" data-i18n="home.quotes.form.phone">Phone</label>
+                          <input type="number" class="form-control form-control-lg rounded-5" id="phone"
+                            data-i18n-placeholder="home.quotes.form.yourPhoneNumber" placeholder="Your phone number" name="phone" required>
+                          <div class="invalid-feedback" data-i18n="home.quotes.form.validPhoneRequired">
+                            Valid phone is required.
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="date" class="form-label font-1 fs-4 fw-bold" data-i18n="home.quotes.form.date">Date</label>
+                          <input type="date" class="form-control form-control-lg rounded-5" id="date" name="date"
+                            required>
+                          <div class="invalid-feedback" data-i18n="home.quotes.form.validDateRequired">
+                            Valid date is required.
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="time" class="form-label font-1 fs-4 fw-bold" data-i18n="home.quotes.form.time">Time</label>
+                          <input type="time" class="form-control form-control-lg rounded-5" id="time" name="time"
+                            required>
+                          <div class="invalid-feedback" data-i18n="home.quotes.form.whatTimeRequired">
+                            What time is required.
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="subject" class="form-label font-1 fs-4 fw-bold" data-i18n="home.quotes.form.subject">Subject</label>
+                          <input type="text" class="form-control form-control-lg rounded-5" id="subject"
+                            data-i18n-placeholder="home.quotes.form.yourSubject" placeholder="Your subject." name="subject" required>
+                          <div class="invalid-feedback" data-i18n="home.quotes.form.validSubjectRequired">
+                            Valid subject is required.
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <label for="message" class="form-label font-1 fs-4 fw-bold" data-i18n="home.quotes.form.message">Message</label>
+                          <textarea class="form-control form-control-lg rounded-5" id="message" name="message"
+                            rows="5" data-i18n-placeholder="home.quotes.form.tellUsYourStory" placeholder="Tell us your story"></textarea>
+                        </div>
+                        <button class="btn btn-block btn-primary-solid submit_form mt-4" type="submit" data-i18n="home.quotes.form.makeAppointment">Make An
+                          Appoinment</button>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="col-lg-6 col-md-12 order-lg-2 order-1 mb-4 mb-lg-0">
+                    <div class="row mt-5">
+                      <h2 class="font-1" style="font-weight: 800;" data-i18n="home.quotes.needHelp">
+                        Need Any Help ? Get In Touch With Us
+                      </h2>
+                      <p class="mt-4 text-muted-color" style="font-size: large;" data-i18n="home.quotes.description">Every health journey begins with a step. We are ready to guide you through this process, answer your questions, and determine the right solution together.</p>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3 justify-content-start mt-3" data-aos="fade-left"
+                      data-aos-easing="ease-out-cubic" data-aos-delay="250" data-aos-duration="1000">
+                      <div
+                        class="d-flex align-items-center justify-content-center rounded-circle border-white bg-primary-color"
+                        style="width: 65px; height: 65px; border: 2px solid white;">
+                        <i class="bi bi-telephone-fill fs-2 text-white"></i>
+                      </div>
+                      <div class="ms-2 font-1 py-2">
+                        <p class="fw-bold text-primary-color mb-0" data-i18n="common.callUsAnytime">Call us anytime</p>
+                        <h5 class="fw-bold" data-i18n="common.phone">+90 537 2784482</h5>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 justify-content-start mt-3" data-aos="fade-left"
+                      data-aos-easing="ease-out-cubic" data-aos-delay="500" data-aos-duration="1000">
+                      <div
+                        class="d-flex align-items-center justify-content-center rounded-circle border-2 border-white bg-primary-color"
+                        style="width: 65px; height: 65px;border: 2px solid white;">
+                        <i class="bi bi-envelope-fill fs-2 text-white"></i>
+                      </div>
+                      <div class="ms-2 font-1 py-2">
+                        <p class="fw-bold text-primary-color mb-0" data-i18n="home.quotes.emailUs">Email us</p>
+                        <h5 class="fw-bold">Info@Yourmail.Com</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #quotes end -->
+
+
+  </main>
+  <!-- #main end -->
+
+  <!-- Footer -->
+  <footer class="footer py-5 px-4">
+    <div class="footer-background"></div>
+    <div class="b-container">
+      <div class="row row-cols-1 pt-5 px-0">
+        <div class="footer-logo col-12 col-lg-3 mb-5 text-lg-start text-center">
+          <img src="image/footer.webp" alt="Footer Logo">
+          <div class="social-box d-flex justify-content-lg-start justify-content-center w-100">
+            <a href="https://www.facebook.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+                class="bi bi-facebook text-white"></i></a>
+            <a href="https://x.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+                class="bi bi-twitter-x text-white"></i></a>
+            <a href="https://www.linkedin.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+                class="bi bi-linkedin text-white"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+          <h4 class="text-secondary-color-2 mb-4" data-i18n="common.contact">Contact</h4>
+          <p>Info@yourmail.com</p>
+          <p data-i18n="common.phone">+90 537 2784482</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+          <h4 class="text-secondary-color-2 mb-4" data-i18n="common.quickLinks">Quick Links</h4>
+          <ul class="d-flex flex-column p-0">
+            <li class="mb-2"><a href="index.html" class="links-secondary" data-i18n="common.homepage">Homepage</a></li>
+            <li class="mb-2"><a href="blogs.html" class="links-secondary" data-i18n="common.blogs">Blogs</a></li>
+            <li class="mb-2"><a href="faqs.html" class="links-secondary" data-i18n="common.faqs">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mb-3 text-md-start text-center">
+          <h4
+            class="font-1 fw-bolder text-secondary-color-2 mb-4 justify-content-md-start justify-content-center align-items-center mt-md-0 mt-sm-4"
+            data-i18n="common.newsletter">
+            Newsletter</h4>
+          <p class="fw-bolder" data-i18n="common.getLatestNews">Get the latest news other tips.</p>
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast success_msg_subscribe text-bg-light" role="alert" aria-live="assertive"
+              aria-atomic="true">
+              <div class="d-flex">
+                <div class="toast-body">
+                  <i class="bi bi-check-circle-fill"></i> Your Subscribe Send Successfully.
+                </div>
+                <button type="button" class="btn me-2 m-auto" data-bs-dismiss="toast" aria-label="Close">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <form class="d-flex flex-column w-100 gap-2 needs-validation" novalidate>
+            <input type="text" name="action" value="subscribe" hidden>
+            <input type="email" name="email" class="form-control form-control-lg rounded-5"
+              data-i18n-placeholder="common.yourEmailHere" placeholder="Your email here" required>
+            <div class="invalid-feedback text-white">
+              Please provide a valid email format (e.g.,
+              user@example.com).
+            </div>
+            <button type="submit" class="btn btn-block btn-secondary-solid submit_subscribe" data-i18n="common.subscribeNow">Subscribe now</button>
+          </form>
+        </div>
+      </div>
+      <div class="row justify-content-center py-4 mt-4 border-top">
+        <p class="text-center w-100 mb-0" data-i18n="common.copyright">Copyright &copy; 2025 Lumina Aesthetic & Health. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer end -->
+
+  <!-- Scripts -->
+  <!-- jQuery -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <!-- Animation On Scroll (AOS) -->
+  <script src="js/vendor/aos.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <!-- JS Script -->
+  <script src="js/submit-form.js"></script>
+  <script src="js/languages-data.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/script.js"></script>
+  <!-- #scripts end -->
+</body>
+
+</html>

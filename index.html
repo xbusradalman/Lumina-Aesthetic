@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title data-i18n="common.homepage">Nuro Psycholog - Mental Health Therapy HTML</title>
+  <!-- Animation On Scroll (AOS) -->
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-white">
+    <div class="b-container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light" aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+          <div class="logo-box">
+            <a href="index.html" class="navbar-brand">
+              <img src="image/Main-Logo.webp" alt="Main Logo"></a>
+          </div>
+          <!-- Language Selector -->
+          <div class="language-selector dropdown me-3" id="languageSelectorContainer">
+            <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" 
+                    id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-globe me-1"></i>
+              <span class="current-lang">English</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item active" href="#" data-lang="en">English</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="tr">Türkçe</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="fr">Français</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="de">Deutsch</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="ar">العربية</a></li>
+            </ul>
+          </div>
+          <button class="navbar-toggler bg-primary-color border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="bi bi-list text-white fs-2"></span>
+          </button>
+          <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header" id="offcanvasNavbarLabel">
+              <div class="logo-drawer">
+                <a href="index.html" class="navbar-brand"><img src="image/Main-Logo.webp" alt="Drawer Logo"
+                    class="img-fluid"></a>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-4 justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html" data-i18n="common.homepage">Homepage</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html" data-i18n="common.aboutUs">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="appointment.html" data-i18n="common.appointment">Appointment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html" data-i18n="common.contactUs">Contact Us</a>
+                </li>
+              </ul>
+              <div class="mt-lg-3">
+                <a href="contact-us.html" class="btn btn-quotes">
+                  <i class="bi bi-journal-bookmark-fill pe-2"></i>
+                  <span data-i18n="common.getQuotes">Get Quotes</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- #navbar end -->
+    </div>
+  </header>
+  <!-- #header end -->
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="section hero-section d-flex align-items-center pb-0">
+      <div class="b-container px-3 px-sm-4 px-md-0">
+        <div class="row row-cols-1 row-cols-lg-2 g-4 align-items-center text-white">
+          <!-- Left Content -->
+          <div class="col mt-md-5 text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start"
+            data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+            <h6 class="text-primary-color fw-semibold" data-i18n="home.heroTagline">FIND BALANCE, EMBRACE LIFE</h6>
+            <h1 class="display-md-4 lh-sm font-1" style="font-weight: 900;" data-i18n="home.heroTitle">
+              Caring for Your <span class="text-primary-color">Inner</span> Peace
+            </h1>
+            <hr class="border border-white border-2 opacity-75 w-75 my-4 mx-auto mx-lg-0">
+            <p class="fs-5 my-4" data-i18n="home.heroDescription">
+              Discover clarity, confidence, and emotional wellness through guided support that helps you manage stress,
+              heal from within, and grow stronger in every aspect of your mental health journey.
+            </p>
+            <div
+              class="d-flex gap-3 align-items-center my-4 flex-nowrap justify-content-lg-start justify-content-center">
+              <a href="appointment.html" role="button" class="btn btn-primary-solid" data-i18n="home.startCheckup">Start A Checkup
+                Now</a>
+              <button class="btn btn-secondary-solid rounded-circle fs-2 p-2 btn-play" type="button"
+                style="width: 60px; height: 60px;" onclick="showVideoOverlay()">
+                <i class="bi bi-play-fill"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Video Overlay -->
+          <div id="videoOverlay" class="video-overlay d-none mt-0">
+            <button type="button" class="position-absolute top-0 end-0 m-3 text-white fs-2 border-0 bg-transparent"
+              onclick="hideVideoOverlay()" aria-label="Close">
+              <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="video-box">
+              <div class="ratio ratio-16x9">
+                <iframe id="youtubeFrame" src="https://www.youtube.com/embed/N3Te3HeEFoA?si=YT6iTnj0qgbxYQ-H"
+                  title="YouTube video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <!-- #video end -->
+
+          <!-- Right Image -->
+          <div class="col position-relative text-center pt-lg-4 pt-xl-3">
+            <img src="image/Place-Holder-600x900.webp" alt="Hero Talent" class="img-fluid position-relative"
+              style="z-index: 2; border-radius: 20px;">
+            <!-- Badge Phone -->
+            <div
+              class="badge-cta position-absolute top-0 end-0 bg-primary-color py-3 px-4 rounded-5 d-flex align-items-center gap-3 justify-content-start"
+              style=" z-index: 1;">
+              <div class=" d-flex align-items-center justify-content-center rounded-circle bg-white"
+                style="width: 60px; height: 60px;">
+                <i class=" bi bi-telephone-fill text-primary-color fs-2"></i>
+              </div>
+              <div class="justify-content-start">
+                <p class="mb-0" data-i18n="common.callUsAnytime">Call us anytime</p>
+                <h3 class="font-1 fw-bolder" data-i18n="common.phone">+90 537 2784482</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #hero end -->
+
+    <!-- Features Section -->
+    <section class="section py-5">
+      <div class="b-container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+          <!-- Card 1 -->
+          <div class="col" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+            <div class="bg-secondary-color text-white p-4 rounded-5 h-100 transition-hover">
+              <div class="d-flex align-items-center gap-3 mb-3 justify-content-start">
+                <div class="d-flex align-items-center justify-content-center bg-secondary-color-2 rounded-circle"
+                  style="width: 50px; height: 50px;">
+                  <i class="bi bi-journal-text fs-4"></i>
+                </div>
+                <h6 class="fw-bold mb-2" style="font-size: large;" data-i18n="home.features.personalizedWellness.title">Personalized<br>Wellness Plans</h6>
+              </div>
+              <p class="mt-5" data-i18n="home.features.personalizedWellness.description">Tailored guidance crafted to meet your unique needs and goals effectively.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+            <div class="bg-secondary-color-2 text-white p-4 rounded-5 h-100 transition-hover">
+              <div class="d-flex align-items-center gap-3 mb-3 justify-content-start">
+                <div class="d-flex align-items-center justify-content-center bg-secondary-color rounded-circle"
+                  style="width: 50px; height: 50px;">
+                  <i class="bi bi-people-fill fs-4"></i>
+                </div>
+                <h6 class="fw-bold mb-2" style="font-size: large;" data-i18n="home.features.expertCounseling.title">Expert-Led<br>Counseling Sessions</h6>
+              </div>
+              <p class="mt-5" data-i18n="home.features.expertCounseling.description">Professional support designed to guide emotional well-being every single day.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+            <div class="bg-primary-color text-white p-4 rounded-5 h-100 transition-hover">
+              <div class="d-flex align-items-center gap-3 mb-3 justify-content-start">
+                <div class="d-flex align-items-center justify-content-center bg-primary-color-2 rounded-circle"
+                  style="width: 50px; height: 50px;">
+                  <i class="bi bi-headset fs-4"></i>
+                </div>
+                <h6 class="fw-bold mb-2" style="font-size: large;" data-i18n="home.features.supportCommunity.title">24/7 Support<br>Community</h6>
+              </div>
+              <p class="mt-5" data-i18n="home.features.supportCommunity.description">Always-connected space offering care, encouragement, and shared growth.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+            <div class="bg-primary-color-2 text-white p-4 rounded-5 h-100 transition-hover">
+              <div class="d-flex align-items-center gap-3 mb-3 justify-content-start">
+                <div class="d-flex align-items-center justify-content-center bg-primary-color rounded-circle"
+                  style="width: 50px; height: 50px;">
+                  <i class="bi bi-tools fs-4"></i>
+                </div>
+                <h6 class="fw-bold mb-2" style="font-size: large;" data-i18n="home.features.selfCareTools.title">Interactive<br>Self-Care Tools</h6>
+              </div>
+              <p class="mt-5" data-i18n="home.features.selfCareTools.description">Empowering digital resources to build healthy habits independently.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- #features end -->
+
+    <!-- About Section -->
+    <section class=" section pb-5 my-5">
+      <div class="b-container">
+        <div
+          class="row row-cols-1 row-cols-xl-2 g-5 align-items-center justify-content-center text-center text-xl-start">
+          <!-- Left Content Side -->
+          <div class="col position-relative d-flex justify-content-center">
+            <div class="position-relative img-container px-0 px-lg-5">
+              <!-- Primary Image -->
+              <div class="ratio-wrapper-429">
+                <img src="image/Place-Holder-1920x1280.webp" alt="About Us"
+                  class="w-100 h-100 object-position-center position-absolute top-0 start-0 rounded-5"
+                  data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+              </div>
+              <!-- Experience Label -->
+              <div
+                class="position-absolute bottom-0 end-0 bg-secondary-color text-white px-4 py-2 rounded-4 m-3 fw-bold small z-1 text-center"
+                data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+                <span class="font-1 fs-2 fw-bold count-up" data-count="10" data-suffix="+ Years">0</span><br>
+                <span class="fs-5">Of Experience</span>
+              </div>
+              <!-- Circle Image -->
+              <div class="position-absolute" style="top: -60px; left: 0; transform: translateX(-11%); z-index: 3;">
+                <div class="img-circle rounded-circle overflow-hidden border border-4 border-white shadow"
+                  data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+                  <img src="image/Place-Holder-265x265.webp" alt="About Us Detail" class="w-100 h-100">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right Content Side -->
+          <div class="col">
+            <h6 class="text-primary-color fw-semibold mb-2" data-i18n="home.about.tagline">ABOUT US</h6>
+            <h2 class="font-1 mb-4" style="font-weight: 800;" data-i18n="home.about.title">Your Journey To Mental Wellness Starts Here</h2>
+            <p class="text-secondary" style="font-size: large;" data-i18n="home.about.description">
+              Every small step toward better mental health is a significant achievement in our lives. With the right
+              support, each individual can find the strength to face challenges, manage stress, and build positive
+              habits. We believe that everyone deserves the opportunity to grow, thrive, and experience inner peace.
+              Through an empathetic and professional approach, we are here to help you discover the best solutions for
+              lasting mental and emotional well-being.
+            </p>
+
+            <h5 class="fw-bold mb-3 mt-4" data-i18n="home.about.serviceApproach">Our Service Approach</h5>
+            <div class="row d-flex flex-column flex-md-row my-4">
+              <div class="col d-flex justify-content-center justify-content-lg-start">
+                <ul class="list-unstyled font-1">
+                  <li class="d-flex align-items-start fw-bolder mb-2">
+                    <i class="bi bi-check-circle-fill text-primary-color fs-4 me-2"></i>
+                    <h5 class="fw-bolder py-1" data-i18n="home.about.freeConsultation">Free Consultation</h5>
+                  </li>
+                  <li class="d-flex align-items-start fw-bolder mb-2">
+                    <i class="bi bi-check-circle-fill text-primary-color fs-4 me-2"></i>
+                    <h5 class="fw-bolder py-1" data-i18n="home.about.emergencyService">Emergency Service</h5>
+                  </li>
+                  <li class="d-flex align-items-start fw-bolder mb-2">
+                    <i class="bi bi-check-circle-fill text-primary-color fs-4 me-2"></i>
+                    <h5 class="fw-bolder py-1" data-i18n="home.about.mentalSatisfaction">Mental Satisfaction</h5>
+                  </li>
+                </ul>
+              </div>
+              <div class="col d-flex justify-content-center justify-content-lg-start">
+                <ul class="list-unstyled font-1">
+                  <li class="d-flex align-items-start fw-bolder mb-2">
+                    <i class="bi bi-check-circle-fill text-primary-color fs-4 me-2"></i>
+                    <h5 class="fw-bolder py-1" data-i18n="home.about.psychologistsServices">Psychologists Services</h5>
+                  </li>
+                  <li class="d-flex align-items-start fw-bolder mb-2">
+                    <i class="bi bi-check-circle-fill text-primary-color fs-4 me-2"></i>
+                    <h5 class="fw-bolder py-1" data-i18n="home.about.endToEndOrganization">End-to-end organization</h5>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="fst-italic fw-bold mb-4" style="font-size: large;" data-i18n="home.about.quote">Healing doesn't mean the damage never
+              existed; it means the
+              strength to rise is greater than the pain</p>
+
+            <div class="d-flex align-items-center justify-content-center justify-content-xl-start gap-3">
+              <a href="about-us.html" class="btn btn-primary-solid" data-i18n="home.about.readMore">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #about end -->
+
+    <!-- Consult Section -->
+    <section class="section py-5 text-white bg-gradient-secondary my-5">
+      <div class="b-container">
+        <div class="row justify-content-center text-center text-xl-start my-5">
+          <div class="col-12 col-xl-7">
+            <h6 class="text-primary-color fw-semibold mb-2" data-i18n="home.howWeWork.tagline">HOW WE WORK ?</h6>
+            <h2 class="font-1 mb-4" style="font-weight: 800;" data-i18n="home.howWeWork.title">
+              Here For Your <span class="text-primary-color">Health</span>,<br>
+              <span class="text-primary-color">Here</span> For Your Heart
+            </h2>
+          </div>
+          <div class="col-12 col-xl-5 mt-4 mt-md-0">
+            <p class="mb-4" style="font-size: large;" data-i18n="home.howWeWork.description">We offer compassionate care, combining physical and emotional
+              support to help you thrive in every aspect.</p>
+            <a href="contact-us.html" class="btn btn-primary-solid" data-i18n="home.howWeWork.getConsultNow">Get Consult Now</a>
+          </div>
+        </div>
+
+        <hr class="border-white solid border-2 my-5">
+
+        <div class="row text-white mb-0 mb-xl-5 pt-5">
+          <div class="step-box col-12 col-lg-4" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500"
+            data-aos-duration="1000">
+            <h1>01</h1>
+            <h3 data-i18n="home.howWeWork.step1.title">Listen &amp; Understand</h3>
+            <p data-i18n="home.howWeWork.step1.description">Your wellness journey matters. We're dedicated to supporting both your mental clarity and emotional
+              strength every step forward.</p>
+          </div>
+          <div class="step-box col-12 col-lg-4" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500"
+            data-aos-duration="1000">
+            <h1>02</h1>
+            <h3 data-i18n="home.howWeWork.step2.title">Create A Tailored Plan</h3>
+            <p data-i18n="home.howWeWork.step2.description">From everyday stress to life's hardest moments, our team stands ready to support your healing and overall
+              well-being.</p>
+          </div>
+          <div class="step-box col-12 col-lg-4" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="500"
+            data-aos-duration="1000">
+            <h1>03</h1>
+            <h3 data-i18n="home.howWeWork.step3.title">Support &amp; Empower</h3>
+            <p data-i18n="home.howWeWork.step3.description">Empowering you to live well with care that nurtures your body, mind, and emotional peace every single
+              day.</p>
+          </div>
+        </div>
+        <p class="text-center text-white mt-5 mb-0" style="font-size: large;" data-i18n="home.howWeWork.closingStatement">With this system, we remove uncertainty from your process; ensuring you experience a safe, comfortable, and controlled health experience.</p>
+      </div>
+    </section>
+    <!-- #consult end -->
+
+    <!-- Services Section -->
+    <section class="section py-5">
+      <div class="b-container text-center">
+        <h6 class="text-primary-color fw-semibold mb-2" data-i18n="home.services.tagline">OUR SERVICES</h6>
+        <h2 class="display-5 font-1 mb-5" style="font-weight: 800;" data-i18n="home.services.title">Breaking Stigmas, Building Strength</h2>
+        <div class="row g-4 my-5 align-items-stretch">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="card border-0 rounded-5 overflow-hidden h-100 shadow-sm scale-hover" data-aos="fade-up"
+              data-aos-easing="linear" data-aos-delay="250" data-aos-duration="1000">
+              <img src="image/breast-cancer-pink-background-with-women-paper-sil-2026-01-09-06-38-18-utc.webp" class="w-100"
+                style="height: 250px; transform: scale(1.5); object-position: center;" alt="Individual Therapy">
+              <div class="bg-accent-color-2 text-start p-4 position-relative">
+                <div class="position-absolute top-0 start-50 translate-middle"
+                  style="margin-top: 0; transform: translate(-50%, -50%);">
+                  <img src="image/icon/Icon1.png" alt="" width="200">
+                </div>
+                <h3 class="font-1 mt-5" style="font-weight: 800;" data-i18n="home.services.individualTherapy.title">Individual Therapy</h3>
+                <hr class="border-primary border-1 opacity-100 w-100 my-4">
+                <p class="mb-3" data-i18n="home.services.individualTherapy.description">Tailored guidance crafted to meet your unique needs and goals effectively.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="card border-0 rounded-5 overflow-hidden h-100 shadow-sm scale-hover" data-aos="fade-up"
+              data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+              <img src="image/positive-delighted-blonde-looking-at-her-beauty-ma-2026-01-08-06-20-35-utc.webp" class="w-100"
+                style="height: 250px; transform: scale(1.5); object-position: center;" alt="Group Counseling">
+              <div class="bg-accent-color-2 text-start p-4 position-relative">
+                <div class="position-absolute top-0 start-50 translate-middle"
+                  style="margin-top: 0; transform: translate(-50%, -50%);">
+                  <img src="image/icon/Icon2.png" alt="" width="200">
+                </div>
+                <h3 class="font-1 mt-5" style="font-weight: 800;" data-i18n="home.services.groupCounseling.title">Group Counseling</h3>
+                <hr class="border-primary border-1 opacity-100 w-100 my-4">
+                <p class="mb-3" data-i18n="home.services.groupCounseling.description">Professional support designed to guide emotional well-being every single day.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="card border-0 rounded-5 overflow-hidden h-100 shadow-sm scale-hover" data-aos="fade-up"
+              data-aos-easing="linear" data-aos-delay="750" data-aos-duration="1000">
+              <img src="image/travel-agency-flight-tickets-passports-and-plane-2026-01-11-11-07-16-utc.webp" class="w-100"
+                style="height: 250px; transform: scale(1.5); object-position: center;" alt="Travel & Accommodation">
+              <div class="bg-accent-color-2 text-start p-4 position-relative">
+                <div class="position-absolute top-0 start-50 translate-middle"
+                  style="margin-top: 0; transform: translate(-50%, -50%);">
+                  <img src="image/icon/Icon3.png" alt="" width="200">
+                </div>
+                <h3 class="font-1 mt-5" style="font-weight: 800;" data-i18n="home.services.stressManagement.title">Travel & Accommodation</h3>
+                <hr class="border-primary border-1 opacity-100 w-100 my-4">
+                <p class="mb-3" data-i18n="home.services.stressManagement.description">We manage the entire logistics process seamlessly, from airport transfer to hotel, from appointments to your return.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="card border-0 rounded-5 overflow-hidden h-100 shadow-sm scale-hover" data-aos="fade-up"
+              data-aos-easing="linear" data-aos-delay="1000" data-aos-duration="1000">
+              <img src="image/closeup-of-mature-doctor-holding-female-patient-3-2026-01-08-23-04-36-utc.webp" class="w-100"
+                style="height: 250px; transform: scale(1.5); object-position: center;" alt="Aftercare Support">
+              <div class="bg-accent-color-2 text-start p-4 position-relative">
+                <div class="position-absolute top-0 start-50 translate-middle"
+                  style="margin-top: 0; transform: translate(-50%, -50%);">
+                  <img src="image/icon/Icon4.png" alt="" width="200">
+                </div>
+                <h3 class="font-1 mt-5" style="font-weight: 800;" data-i18n="home.services.aftercareSupport.title">Aftercare Support</h3>
+                <hr class="border-primary border-1 opacity-100 w-100 my-4">
+                <p class="mb-3" data-i18n="home.services.aftercareSupport.description">We are also with you during your post-operation recovery process; ensuring you complete the process safely with check-ups, communication, and guidance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #services end -->
+
+    <!-- Appointment Section -->
+    <section class="section py-5 text-white bg-gradient-secondary my-5">
+      <div class="b-container">
+        <div class="row align-items-center g-4 pt-5">
+          <!-- Left content -->
+          <div class="col-12 col-xl-5 order-1 order-md-3 order-xl-1 text-white mt-5 text-center text-xl-start">
+            <p class="text-uppercase text-primary-color fs-5 fw-semibold mb-2" data-i18n="home.appointment.whyChooseUs">Why Choose Us ?</p>
+            <h2 class="font-1 display-5 mb-4" style="font-weight: 800;" data-i18n="home.appointment.title">
+              We Build Trust,<br>We Make Transformation Possible
+            </h2>
+            <p class="mb-4" style="font-size: large;" data-i18n="home.appointment.description">As Lumina Aesthetic & Health, we accept each of our clients' journeys as unique and valuable. With proper guidance, transparent communication, and professional organization; we eliminate uncertainty and make the process safe and controllable. Our goal is to take you not just to a treatment, but to a well-planned and seamless transformation process.</p>
+            <ul class="list-unstyled font-1 text-center text-xl-start">
+              <li class="d-flex flex-column flex-xl-row justify-content-center justify-content-xl-start mb-3">
+                <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
+                <div>
+                  <h5 class="fw-bolder py-1 mb-1" data-i18n="home.appointment.compassionateProfessionals">Expert and Reliable Network</h5>
+                  <p class="mb-0" style="font-size: 0.9rem;" data-i18n="home.appointment.compassionateProfessionalsDesc">We work with competent physicians in their fields and distinguished clinics, planning every step with medical seriousness.</p>
+                </div>
+              </li>
+              <li class="d-flex flex-column flex-xl-row justify-content-center justify-content-xl-start mb-3">
+                <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
+                <div>
+                  <h5 class="fw-bolder py-1 mb-1" data-i18n="home.appointment.holisticApproach">End-to-End Management</h5>
+                  <p class="mb-0" style="font-size: 0.9rem;" data-i18n="home.appointment.holisticApproachDesc">We organize the entire process on your behalf, from consultation to return day.</p>
+                </div>
+              </li>
+              <li class="d-flex flex-column flex-xl-row justify-content-center justify-content-xl-start mb-3">
+                <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
+                <div>
+                  <h5 class="fw-bolder py-1 mb-1" data-i18n="home.appointment.safeEnvironment">Transparent and Ethical Approach</h5>
+                  <p class="mb-0" style="font-size: 0.9rem;" data-i18n="home.appointment.safeEnvironmentDesc">We act with realistic information, clear processes, and the principle of confidentiality.</p>
+                </div>
+              </li>
+              <li class="d-flex flex-column flex-xl-row justify-content-center justify-content-xl-start mb-3">
+                <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
+                <div>
+                  <h5 class="fw-bolder py-1 mb-1" data-i18n="home.appointment.secureExperience">Safe and Comfortable Experience</h5>
+                  <p class="mb-0" style="font-size: 0.9rem;" data-i18n="home.appointment.secureExperienceDesc">We put your health at the center and ensure you feel safe at every stage.</p>
+                </div>
+              </li>
+            </ul>
+            <p class="mb-4 mt-3" style="font-size: large; font-style: italic;" data-i18n="home.appointment.closingStatement">On this journey you embark with us, you are not alone; a team that knows, manages, and takes responsibility for the process is with you.</p>
+            <a href="appointment.html" class="btn btn-primary-solid mb-5" data-i18n="home.appointment.makeAppointment">Make An Appointment</a>
+          </div>
+
+          <!-- Middle content -->
+          <div class="col-12 col-md-7 col-xl-5 order-2 order-md-1">
+            <div class="ratio ratio-1x1">
+              <img src="image/doctor-touches-female-face-with-both-hands-in-pink-2026-01-05-06-10-54-utc.webp"
+                class="w-100 h-100 object-fit-cover position-absolute rounded-5" alt="Appointment" data-aos="fade-up"
+                data-aos-easing="linear" data-aos-delay="750" data-aos-duration="1000">
+            </div>
+          </div>
+          <!-- Right content -->
+          <div class="col-12 col-md-5 col-xl-2 d-flex flex-column gap-3 order-3 order-md-2 order-xl-3">
+            <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left" data-aos-easing="linear"
+              data-aos-delay="500" data-aos-duration="1000">
+              <div class="card-body text-center text-white p-3 font-1">
+                <div class="display-5"><i class="bi bi-emoji-smile-fill accent-secondary-color"></i></div>
+                <div class="mb-0 fs-2 fw-bold">100%</div>
+                <p class="mb-0" data-i18n="home.appointment.satisfaction">Satisfaction</p>
+              </div>
+            </div>
+            <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left" data-aos-easing="linear"
+              data-aos-delay="750" data-aos-duration="1000">
+              <div class="card-body text-center text-white p-3 font-1">
+                <div class="display-5"><i class="bi bi-hand-thumbs-up-fill accent-secondary-color"></i></div>
+                <div class="mb-0 fs-2 fw-bold">257+</div>
+                <p class="mb-0" data-i18n="home.appointment.happyPatient">Happy Patient</p>
+              </div>
+            </div>
+            <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left" data-aos-easing="linear"
+              data-aos-delay="1000" data-aos-duration="1000">
+              <div class="card-body text-center text-white p-3 font-1">
+                <div class="display-5"><i class="bi bi-person-plus-fill accent-secondary-color"></i></div>
+                <div class="mb-0 fs-2 fw-bold">Alanında</div>
+                <p class="mb-0">Uzman Hekimler</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #appointment end -->
+
+    <!-- Feedback Section -->
+    <section class="section py-5 mt-5">
+      <div class="b-container">
+        <div class="row justify-content-between">
+          <div class="col-12 col-lg-7 text-center text-lg-start">
+            <h6 class="text-primary-color fw-semibold mb-2" data-i18n="home.feedback.tagline">CLIENT FEEDBACKS</h6>
+            <h2 class="font-1" style="font-weight: 800;" data-i18n="home.feedback.title">
+              Healing Begins with a Conversation
+            </h2>
+          </div>
+          <div class="col-12 col-lg-5 text-center text-lg-start mt-4 mt-md-0">
+            <p class="my-4 text-muted-color" style="font-size: large;" data-i18n="home.feedback.description">Healing isn't rushed—it's supported. Our team
+              walks beside you, offering understanding and tailored support to help you rebuild confidence and emotional
+              peace day by day.</p>
+          </div>
+        </div>
+
+        <div class="swiper mySwiper mt-4">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide">
+              <div class="card feedback-card">
+                <div class="d-flex align-content-center mb-3">
+                  <div class="mb-2 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fw-bold" data-i18n="home.feedback.client1.quote">"From the very first moment, I felt I was working with a professional and caring team. The clinic selection, appointments, and all organization were flawless. They made me feel safe."</p>
+                <div class="d-flex align-items-center mt-2">
+                  <img src="image/Place-Holder-265x265.webp" alt="Client 1" class="rounded-circle me-3"
+                    style="width: 64px; height: 64px;">
+                  <div class="mt-4">
+                    <h5 class="font-1 fw-bold text-primary-color" data-i18n="home.feedback.client1.name">Anna K.</h5>
+                    <p class="text-muted-color" data-i18n="home.feedback.client1.location">Germany</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="swiper-slide">
+              <div class="card feedback-card">
+                <div class="d-flex align-content-center mb-3">
+                  <div class="mb-2 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fw-bold" data-i18n="home.feedback.client2.quote">"Getting treatment abroad was intimidating at first. However, the Lumina team thought of every detail on my behalf. I was met at the airport, and I was not alone throughout the process."</p>
+                <div class="d-flex align-items-center mt-2">
+                  <img src="image/Place-Holder-265x265.webp" alt="Client 2" class="rounded-circle me-3"
+                    style="width: 64px; height: 64px;">
+                  <div class="mt-4">
+                    <h5 class="font-1 fw-bold text-primary-color" data-i18n="home.feedback.client2.name">Mark T.</h5>
+                    <p class="text-muted-color" data-i18n="home.feedback.client2.location">Netherlands</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="swiper-slide">
+              <div class="card feedback-card">
+                <div class="d-flex align-content-center mb-3">
+                  <div class="mb-2 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fw-bold" data-i18n="home.feedback.client3.quote">"They were very transparent about doctor selection and the treatment process. They clearly explained what would be done and what I should expect. This feeling of trust was everything to me."</p>
+                <div class="d-flex align-items-center mt-2">
+                  <img src="image/Place-Holder-265x265.webp" alt="Client 3" class="rounded-circle me-3"
+                    style="width: 64px; height: 64px;">
+                  <div class="mt-4">
+                    <h5 class="font-1 fw-bold text-primary-color" data-i18n="home.feedback.client3.name">Sophie M.</h5>
+                    <p class="text-muted-color" data-i18n="home.feedback.client3.location">Austria</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="swiper-slide">
+              <div class="card feedback-card">
+                <div class="d-flex align-content-center mb-3">
+                  <div class="mb-2 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fw-bold" data-i18n="home.feedback.client4.quote">"They stayed in communication with me even after the operation. They took care of my check-ups, my questions, everything. This was not just a service, it was a real companionship."</p>
+                <div class="d-flex align-items-center mt-2">
+                  <img src="image/Place-Holder-265x265.webp" alt="Client 4" class="rounded-circle me-3"
+                    style="width: 64px; height: 64px;">
+                  <div class="mt-4">
+                    <h5 class="font-1 fw-bold text-primary-color" data-i18n="home.feedback.client4.name">Daniel R.</h5>
+                    <p class="text-muted-color" data-i18n="home.feedback.client4.location">Switzerland</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #feedback end -->
+
+
+    <!-- Quotes Section -->
+    <section class="quotes-section py-5">
+      <div class="quotes-background"></div>
+      <div class="container py-5 px-2 px-md-0">
+        <div class="row justify-content-center text-center text-white">
+          <div class="col-12 col-xl-10">
+            <h6 class="text-primary-color fw-semibold mb-2" data-i18n="home.quotes.tagline">GET A QUOTE</h6>
+            <h2 class="font-1 text-white" style="font-weight: 800;" data-i18n="home.quotes.title">
+              Take the first step for your health and aesthetic journey. Contact us today, let's create your personalized plan together.
+            </h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-12 col-xl-10">
+            <div class="card rounded-5 shadow-lg border-0 bg-secondary-gradient">
+              <div class="card-body p-4 p-lg-5">
+                <div class="row g-5 align-items-strench">
+                  <div class="col-lg-6 col-md-12 order-lg-1 order-2">
+                    <div
+                      class="success_msg toast align-items-center w-100 shadow-none mb-3 border border-success rounded-pill my-4"
+                      role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="d-flex p-2">
+                        <div class="toast-body d-flex flex-row gap-3 align-items-center text-success">
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                          Your Message Successfully Send.
+                        </div>
+                        <button type="button" class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success"
+                          data-bs-dismiss="toast" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </div>
+                    <div
+                      class="error_msg toast align-items-center w-100 shadow-none border-danger mb-3 my-4 border rounded-pill"
+                      role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="d-flex p-2">
+                        <div class="toast-body d-flex flex-row gap-3 align-items-center text-danger">
+                          <i class="bi bi-exclamation-triangle-fill text-danger"></i>
+                          Something Wrong ! Send Form Failed.
+                        </div>
+                        <button type="button" class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-danger"
+                          data-bs-dismiss="toast" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </div>
+                    <form class="needs-validation" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500"
+                      data-aos-duration="1000" novalidate>
+                      <div class="row g-3">
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="name" class="form-label font-1 fs-4 fw-bold" data-i18n="home.quotes.form.name">Name</label>
+                          <input type="text" class="form-control form-control-lg rounded-5" id="name"
+                            data-i18n-placeholder="home.quotes.form.yourNameHere" placeholder="Your name here" name="name" required>
+                          <div class="invalid-feedback" data-i18n="home.quotes.form.validNameRequired">
+                            Valid name is required.
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="email" class="form-label font-1 fs-4 fw-bold" data-i18n="home.quotes.form.email">Email</label>
+                          <input type="email" class="form-control form-control-lg rounded-5" id="email"
+                            data-i18n-placeholder="home.quotes.form.yourEmailHere" placeholder="Your email here" name="email" required>
+                          <div class="invalid-feedback" data-i18n="home.quotes.form.validEmailRequired">
+                            Valid email is required.
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="phone" class="form-label font-1 fs-4 fw-bold" data-i18n="home.quotes.form.phone">Phone</label>
+                          <input type="number" class="form-control form-control-lg rounded-5" id="phone"
+                            data-i18n-placeholder="home.quotes.form.yourPhoneNumber" placeholder="Your phone number" name="phone" required>
+                          <div class="invalid-feedback" data-i18n="home.quotes.form.validPhoneRequired">
+                            Valid phone is required.
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="date" class="form-label font-1 fs-4 fw-bold" data-i18n="home.quotes.form.date">Date</label>
+                          <input type="date" class="form-control form-control-lg rounded-5" id="date" name="date"
+                            required>
+                          <div class="invalid-feedback" data-i18n="home.quotes.form.validDateRequired">
+                            Valid date is required.
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="time" class="form-label font-1 fs-4 fw-bold" data-i18n="home.quotes.form.time">Time</label>
+                          <input type="time" class="form-control form-control-lg rounded-5" id="time" name="time"
+                            required>
+                          <div class="invalid-feedback" data-i18n="home.quotes.form.whatTimeRequired">
+                            What time is required.
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="subject" class="form-label font-1 fs-4 fw-bold" data-i18n="home.quotes.form.subject">Subject</label>
+                          <input type="text" class="form-control form-control-lg rounded-5" id="subject"
+                            data-i18n="home.quotes.form.yourSubject" placeholder="Your subject." name="subject" required>
+                          <div class="invalid-feedback" data-i18n="home.quotes.form.validSubjectRequired">
+                            Valid subject is required.
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <label for="message" class="form-label font-1 fs-4 fw-bold" data-i18n="home.quotes.form.message">Message</label>
+                          <textarea class="form-control form-control-lg rounded-5" id="message" name="message" rows="5"
+                            data-i18n-placeholder="home.quotes.form.tellUsYourStory" placeholder="Tell us your story"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-block btn-primary-solid submit_form mt-4" data-i18n="home.quotes.form.makeAppointment">Make An
+                          Appoinment</button>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="col-lg-6 col-md-12 order-lg-2 order-1 mb-4 mb-lg-0">
+                    <div class="row mt-5">
+                      <h2 class="font-1" style="font-weight: 800;" data-i18n="home.quotes.needHelp">
+                        Need Any Help ? Get In Touch With Us
+                      </h2>
+                      <p class="mt-4 text-muted-color" style="font-size: large;" data-i18n="home.quotes.description">Every small step counts. We're
+                        committed to walking with you through difficult moments, encouraging progress, and nurturing
+                        your journey toward lasting mental and emotional recovery.</p>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3 justify-content-start mt-3" data-aos="fade-left"
+                      data-aos-easing="ease-out-cubic" data-aos-delay="250" data-aos-duration="1000">
+                      <div
+                        class="d-flex align-items-center justify-content-center rounded-circle border-white bg-primary-color"
+                        style="width: 65px; height: 65px; border: 2px solid white;">
+                        <i class="bi bi-telephone-fill fs-2 text-white"></i>
+                      </div>
+                      <div class="ms-2 font-1 py-2">
+                        <p class="fw-bold text-primary-color mb-0" data-i18n="common.callUsAnytime">Call us anytime</p>
+                        <h5 class="fw-bold" data-i18n="common.phone">+90 537 2784482</h5>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 justify-content-start mt-3" data-aos="fade-left"
+                      data-aos-easing="ease-out-cubic" data-aos-delay="500" data-aos-duration="1000">
+                      <div
+                        class="d-flex align-items-center justify-content-center rounded-circle border-2 border-white bg-primary-color"
+                        style="width: 65px; height: 65px;border: 2px solid white;">
+                        <i class="bi bi-envelope-fill fs-2 text-white"></i>
+                      </div>
+                      <div class="ms-2 font-1 py-2">
+                        <p class="fw-bold text-primary-color mb-0" data-i18n="home.quotes.emailUs">Email us</p>
+                        <h5 class="fw-bold">Info@Yourmail.Com</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #quotes end -->
+
+    <!-- News Section -->
+    <section class="section py-5 mb-5">
+      <div class="b-container">
+        <div class="row d-flex justify-content-lg-between justify-content-center text-center text-lg-start">
+          <div class="col-12 col-lg-6">
+            <h6 class="text-primary-color fs-5 fw-semibold mb-2" data-i18n="home.news.tagline">NEWSLETTER</h6>
+            <h2 class="font-1 display-5" style="font-weight: 800;" data-i18n="home.news.title">
+              Read Our Latest Blog & Article
+            </h2>
+          </div>
+          <div class="col-12 col-lg-6 text-lg-end mt-2 py-4">
+            <a href="blogs.html" class="btn btn-block btn-primary-solid" data-i18n="common.allBlogArticle"> All Blog & Article <i
+                class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-4">
+          <div class="col">
+            <div class="card news-card shadow-lg" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+              data-aos-delay="250" data-aos-duration="1000">
+              <div class="position-relative w-100"
+                style="height: 250px;background-image: url(image/Place-Holder-1920x1280.webp); background-size: cover; background-position: center;">
+                <div class="position-absolute bg-dark" style="opacity: .1; top: 0; left:0; right: 0; bottom: 0;"></div>
+                <div
+                  class="position-absolute text-white d-flex flex-column justify-content-center align-items-center bg-primary-color"
+                  style="bottom: 0; left: 0; width: 55px; height: 55px;">
+                  <h5 class="fw-bolder mb-0" data-i18n="home.news.blog1.date">27</h5>
+                  <small class="mt-0" data-i18n="home.news.blog1.month">Mar</small>
+                </div>
+                <a href="blogs.html"><span class="position-absolute px-2 py-1 text-white rounded-1 bg-primary-color"
+                    style="top:15px; left: 20px;" data-i18n="home.news.blog1.category">Aesthetic & Surgery</span></a>
+              </div>
+              <div class="card-body p-4">
+                <a href="blog-detail.html" class="card-title" data-i18n="home.news.blog1.title">What Should You Pay Attention to When Getting Treatment Abroad?</a>
+                <p class="text-muted-color" data-i18n="home.news.blog1.description">Right clinic selection, physician experience, legal processes and post-surgery care… In this article, we cover all the essential steps you need to know for a safe and seamless process when planning treatment abroad.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col">
+            <div class="card news-card shadow-lg" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+              data-aos-delay="500" data-aos-duration="1000">
+              <div class="position-relative w-100"
+                style="height: 250px;background-image: url(image/Place-Holder-1920x1280.webp); background-size: cover; background-position: center;">
+                <div class="position-absolute bg-dark" style="opacity: .1; top: 0; left:0; right: 0; bottom: 0;"></div>
+                <div
+                  class="position-absolute text-white d-flex flex-column justify-content-center align-items-center bg-primary-color"
+                  style="bottom: 0; left: 0; width: 55px; height: 55px;">
+                  <h5 class="fw-bolder mb-0" data-i18n="home.news.blog2.date">17</h5>
+                  <small class="mt-0" data-i18n="home.news.blog2.month">Feb</small>
+                </div>
+                <a href="blogs.html"><span class="position-absolute px-2 py-1 text-white rounded-1 bg-primary-color"
+                    style="top:15px; left: 20px;" data-i18n="home.news.blog2.category">Health Tourism</span></a>
+              </div>
+              <div class="card-body p-4">
+                <a href="blog-detail.html" class="card-title" data-i18n="home.news.blog2.title">Why is Turkey Preferred by International Patients?</a>
+                <p class="text-muted-color" data-i18n="home.news.blog2.description">Modern hospitals, experienced physicians and high quality standards… We examine with data and examples why Turkey has become a global center in the field of health.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card news-card shadow-lg" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+              data-aos-delay="750" data-aos-duration="1000">
+              <div class="position-relative w-100"
+                style="height: 250px;background-image: url(image/Place-Holder-1920x1280.webp); background-size: cover; background-position: center;">
+                <div class="position-absolute bg-dark" style="opacity: .1; top: 0; left:0; right: 0; bottom: 0;"></div>
+                <div
+                  class="position-absolute text-white d-flex flex-column justify-content-center align-items-center bg-primary-color"
+                  style="bottom: 0; left: 0; width: 55px; height: 55px;">
+                  <h5 class="fw-bolder mb-0" data-i18n="home.news.blog3.date">06</h5>
+                  <small class="mt-0" data-i18n="home.news.blog3.month">Jan</small>
+                </div>
+                <a href="blogs.html"><span class="position-absolute px-2 py-1 text-white rounded-1 bg-primary-color"
+                    style="top:15px; left: 20px;" data-i18n="home.news.blog3.category">Patient Experience</span></a>
+              </div>
+              <div class="card-body p-4">
+                <a href="blog-detail.html" class="card-title" data-i18n="home.news.blog3.title">The Importance of Comfort in the Treatment Process: The Power of End-to-End Organization</a>
+                <p class="text-muted-color" data-i18n="home.news.blog3.description">We explain the impact of professional management of all details, from airport transfer to accommodation, from appointment planning to the recovery process, on the patient experience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #news end -->
+
+  </main>
+  <!-- #main end -->
+
+  <!-- Footer -->
+  <footer class="footer py-5 px-4">
+    <div class="footer-background"></div>
+    <div class="b-container">
+      <div class="row row-cols-1 pt-5 px-0">
+        <div class="footer-logo col-12 col-lg-3 mb-5 text-lg-start text-center">
+          <img src="image/footer.webp" alt="Footer Logo">
+          <div class="social-box d-flex justify-content-lg-start justify-content-center w-100">
+            <a href="https://www.facebook.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+                class="bi bi-facebook text-white"></i></a>
+            <a href="https://x.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+                class="bi bi-twitter-x text-white"></i></a>
+            <a href="https://www.linkedin.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+                class="bi bi-linkedin text-white"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+          <h4 class="text-secondary-color-2 mb-4" data-i18n="common.contact">Contact</h4>
+          <p>Info@yourmail.com</p>
+          <p data-i18n="common.phone">+90 537 2784482</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+          <h4 class="text-secondary-color-2 mb-4" data-i18n="common.quickLinks">Quick Links</h4>
+          <ul class="d-flex flex-column p-0">
+            <li class="mb-2"><a href="index.html" class="links-secondary" data-i18n="common.homepage">Homepage</a></li>
+            <li class="mb-2"><a href="blogs.html" class="links-secondary" data-i18n="common.blogs">Blogs</a></li>
+            <li class="mb-2"><a href="faqs.html" class="links-secondary" data-i18n="common.faqs">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mb-3 text-md-start text-center">
+          <h4
+            class="font-1 fw-bolder text-secondary-color-2 mb-4 justify-content-md-start justify-content-center align-items-center mt-md-0 mt-sm-4"
+            data-i18n="common.newsletter">
+            Newsletter</h4>
+          <p class="fw-bolder" data-i18n="common.getLatestNews">Get the latest news other tips.</p>
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast success_msg_subscribe text-bg-light" role="alert" aria-live="assertive"
+              aria-atomic="true">
+              <div class="d-flex">
+                <div class="toast-body">
+                  <i class="bi bi-check-circle-fill"></i> Your Subscribe Send Successfully.
+                </div>
+                <button type="button" class="btn me-2 m-auto" data-bs-dismiss="toast" aria-label="Close">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <form class="d-flex flex-column w-100 gap-2 needs-validation" novalidate>
+            <input type="text" name="action" value="subscribe" hidden>
+            <input type="email" name="email" class="form-control form-control-lg rounded-5"
+              data-i18n-placeholder="common.yourEmailHere" placeholder="Your email here" required>
+            <div class="invalid-feedback text-white">
+              Please provide a valid email format (e.g.,
+              user@example.com).
+            </div>
+            <button type="submit" class="btn btn-block btn-secondary-solid submit_subscribe" data-i18n="common.subscribeNow">Subscribe
+              now</button>
+          </form>
+        </div>
+      </div>
+      <div class="row justify-content-center py-4 mt-4 border-top">
+        <p class="text-center w-100 mb-0" data-i18n="common.copyright">Copyright &copy; 2025 Lumina Aesthetic & Health. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer end -->
+
+  <!-- Scripts -->
+  <!-- jQuery -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <!-- Animation On Scroll (AOS) -->
+  <script src="js/vendor/aos.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/vendor/swiper-bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <!-- JS Script -->
+  <script src="js/submit-form.js"></script>
+  <script src="js/script-swiper.js"></script>
+  <script src="js/script-counter.js"></script>
+  <script src="js/video-player.js"></script>
+  <script src="js/languages-data.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/script.js"></script>
+  <!-- #scripts end -->
+  
+  <script>
+    // Language manager'ın yüklendiğinden emin ol
+    window.addEventListener('load', function() {
+      console.log('Sayfa yüklendi, LanguageManager kontrol ediliyor...');
+      
+      // Global languageManager değişkenini kontrol et
+      if (window.languageManager) {
+        console.log('LanguageManager bulundu:', window.languageManager.currentLanguage);
+        
+        setTimeout(() => {
+          if (window.languageManager.translations[window.languageManager.currentLanguage]) {
+            console.log('Sayfa yüklendi, çeviriler tekrar güncelleniyor...');
+            window.languageManager.updatePage();
+          } else {
+            console.warn('Dil dosyası henüz yüklenmemiş, tekrar deniyor...');
+            // Tekrar dene
+            window.languageManager.init();
+          }
+        }, 500);
+      } else {
+        console.error('LanguageManager bulunamadı! Script yüklendi mi?');
+      }
+    });
+  </script>
+</body>
+
+</html>
